@@ -1,0 +1,1239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendXMLMap="http://www.talend.org/xmlmap" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="useruniquecode" prompt="useruniquecode?" promptNeeded="false" type="id_String" value=""/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="3104" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:1/uv/o4qKaIESQwFHQg7HR5Voek9RIjA58cjfKXl" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/TOS_ESB-20200219_1130-V7.3.1/Studio/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_12" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:PW8YYeROwYTZBOc3BgKO/KuEp1C6d2vUP4+HTG1h" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_7eA7gFQ4Eey09roxPsO9nQ" name="DataOperation"/>
+    <routinesParameter id="_7h_ckFQ4Eey09roxPsO9nQ" name="Mathematical"/>
+    <routinesParameter id="_7i6poFQ4Eey09roxPsO9nQ" name="Numeric"/>
+    <routinesParameter id="_7jDMgFQ4Eey09roxPsO9nQ" name="Relational"/>
+    <routinesParameter id="_7jgfgFQ4Eey09roxPsO9nQ" name="StringHandling"/>
+    <routinesParameter id="_7jji0FQ4Eey09roxPsO9nQ" name="TalendDataGenerator"/>
+    <routinesParameter id="_7kYCMFQ4Eey09roxPsO9nQ" name="TalendDate"/>
+    <routinesParameter id="_7kungFQ4Eey09roxPsO9nQ" name="TalendStringUtil"/>
+    <routinesParameter id="_7kq9IFQ4Eey09roxPsO9nQ" name="TalendString"/>
+    <routinesParameter id="_CIDPQFy4Eey0Zt77mCVwhA" name="validateJavaDate"/>
+  </parameters>
+  <node componentName="tRESTRequest" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="-3040" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTRequest_1" show="false"/>
+    <elementParameter field="TEXT" name="API_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="REST_ENDPOINT" value="&quot;http://localhost:8088/&quot;"/>
+    <elementParameter field="TABLE" name="SCHEMAS">
+      <elementValue elementRef="SCHEMA" value="ClientHoldings"/>
+      <elementValue elementRef="HTTP_VERB" value="POST"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;Client/Holdings&quot;"/>
+      <elementValue elementRef="CONSUMES" value="JSON"/>
+      <elementValue elementRef="PRODUCES" value="JSON"/>
+      <elementValue elementRef="STREAMING" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="SERVICE_LOCATOR" value="false"/>
+    <elementParameter field="TEXT" name="SERVICE_NAMESPACE" value="&quot;http://www.talend.org/rest/&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SERVICE_NAME" value="&quot;Client_Profile&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SERVICE_ACTIVITY_MONITOR" value="false"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" value="BASIC" show="false"/>
+    <elementParameter field="CHECK" name="NEED_AUTHORIZATION" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_BUSINESS_CORRELATION" value="false"/>
+    <elementParameter field="CHECK" name="LOG_MESSAGES" value="false"/>
+    <elementParameter field="CHECK" name="WRAP_JSON_REQUEST" value="true"/>
+    <elementParameter field="TABLE" name="SERVICE_LOCATOR_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="TABLE" name="SERVICE_ACTIVITY_MONITOR_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="CHECK" name="CONVERT_JSON_VALUES_TO_STRING" value="false"/>
+    <elementParameter field="CHECK" name="EXPOSE_SWAGGER_SPEC" value="false" show="false"/>
+    <elementParameter field="CHECK" name="INCLUDE_DOC_INTO_SWAGGER_SPEC" value="true" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="WRONG_CALLS" name="WRONG_CALLS">
+      <column defaultValue="" key="false" length="255" name="uri" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="method" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="status" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="1024" name="error" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" label="ClientHoldings" name="ClientHoldings">
+      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="string" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="-2848" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_3" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="client_holdings" name="client_holdings">
+      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="useruniquecode" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="string" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees name="ClientHoldings" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+        <nodes name="body" expression="" type="id_Document" xpath="ClientHoldings/body">
+          <children name="root" expression="" type="id_String" xpath="ClientHoldings.body:/root" main="true">
+            <children name="UniqueIdentifier" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.0" xpath="ClientHoldings.body:/root/UniqueIdentifier"/>
+            <children name="Source" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.1" xpath="ClientHoldings.body:/root/Source"/>
+            <children name="RequestBody" expression="" type="id_String" xpath="ClientHoldings.body:/root/RequestBody" loop="true" main="true">
+              <children name="UserId" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.2" xpath="ClientHoldings.body:/root/RequestBody/UserId"/>
+              <children name="UserType" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.3" xpath="ClientHoldings.body:/root/RequestBody/UserType"/>
+              <children name="UserCode" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.4" xpath="ClientHoldings.body:/root/RequestBody/UserCode"/>
+              <children name="LastBusinessDate" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.5" xpath="ClientHoldings.body:/root/RequestBody/LastBusinessDate"/>
+              <children name="CurrencyCode" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.6" xpath="ClientHoldings.body:/root/RequestBody/CurrencyCode"/>
+              <children name="AmountDenomination" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.7" xpath="ClientHoldings.body:/root/RequestBody/AmountDenomination"/>
+              <children name="IndexType" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.8" xpath="ClientHoldings.body:/root/RequestBody/IndexType"/>
+              <children name="AccountLevel" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.9" xpath="ClientHoldings.body:/root/RequestBody/AccountLevel"/>
+              <children name="IsFundware" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.10" xpath="ClientHoldings.body:/root/RequestBody/IsFundware"/>
+              <children name="AssetAllocation" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.11" xpath="ClientHoldings.body:/root/RequestBody/AssetAllocation"/>
+              <children name="Advisory" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.12" xpath="ClientHoldings.body:/root/RequestBody/Advisory"/>
+              <children name="ISAlldataRequired" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.13" xpath="ClientHoldings.body:/root/RequestBody/ISAlldataRequired"/>
+              <children name="ClientType" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.14" xpath="ClientHoldings.body:/root/RequestBody/ClientType"/>
+              <children name="ReadUCC" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.15" xpath="ClientHoldings.body:/root/RequestBody/ReadUCC"/>
+              <children name="WithoutXIRR" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.16" xpath="ClientHoldings.body:/root/RequestBody/WithoutXIRR"/>
+            </children>
+            <children name="UserUniqueCode" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.18" xpath="ClientHoldings.body:/root/UserUniqueCode"/>
+          </children>
+        </nodes>
+        <nodes name="string" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.17" xpath="ClientHoldings/string"/>
+      </inputTrees>
+      <outputTrees name="client_holdings" allInOne="true">
+        <nodes name="body" expression="" type="id_Document" xpath="client_holdings/body" pattern="">
+          <children xsi:type="TalendXMLMap:OutputTreeNode" name="root" expression="" type="id_String" xpath="client_holdings.body:/root" main="true">
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="UniqueIdentifier" expression="[ClientHoldings.body:/root/UniqueIdentifier]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.0" xpath="client_holdings.body:/root/UniqueIdentifier"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="Source" expression="[ClientHoldings.body:/root/Source]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.1" xpath="client_holdings.body:/root/Source"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="RequestBody" expression="" type="id_String" xpath="client_holdings.body:/root/RequestBody" loop="true" main="true">
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="UserId" expression="[ClientHoldings.body:/root/RequestBody/UserId]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.2" xpath="client_holdings.body:/root/RequestBody/UserId"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="UserType" expression="[ClientHoldings.body:/root/RequestBody/UserType]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.3" xpath="client_holdings.body:/root/RequestBody/UserType"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="UserCode" expression="[ClientHoldings.body:/root/RequestBody/UserCode]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.4" xpath="client_holdings.body:/root/RequestBody/UserCode"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="LastBusinessDate" expression="[ClientHoldings.body:/root/RequestBody/LastBusinessDate]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.5" xpath="client_holdings.body:/root/RequestBody/LastBusinessDate"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="CurrencyCode" expression="[ClientHoldings.body:/root/RequestBody/CurrencyCode]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.6" xpath="client_holdings.body:/root/RequestBody/CurrencyCode"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="AmountDenomination" expression="[ClientHoldings.body:/root/RequestBody/AmountDenomination]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.7" xpath="client_holdings.body:/root/RequestBody/AmountDenomination"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="IndexType" expression="[ClientHoldings.body:/root/RequestBody/IndexType]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.8" xpath="client_holdings.body:/root/RequestBody/IndexType"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="AccountLevel" expression="[ClientHoldings.body:/root/RequestBody/AccountLevel]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.9" xpath="client_holdings.body:/root/RequestBody/AccountLevel"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="IsFundware" expression="[ClientHoldings.body:/root/RequestBody/IsFundware]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.10" xpath="client_holdings.body:/root/RequestBody/IsFundware"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="AssetAllocation" expression="[ClientHoldings.body:/root/RequestBody/AssetAllocation]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.11" xpath="client_holdings.body:/root/RequestBody/AssetAllocation"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="Advisory" expression="[ClientHoldings.body:/root/RequestBody/Advisory]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.12" xpath="client_holdings.body:/root/RequestBody/Advisory"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="ISAlldataRequired" expression="[ClientHoldings.body:/root/RequestBody/ISAlldataRequired]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.13" xpath="client_holdings.body:/root/RequestBody/ISAlldataRequired"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="ClientType" expression="[ClientHoldings.body:/root/RequestBody/ClientType]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.14" xpath="client_holdings.body:/root/RequestBody/ClientType"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="ReadUCC" expression="[ClientHoldings.body:/root/RequestBody/ReadUCC]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.15" xpath="client_holdings.body:/root/RequestBody/ReadUCC"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="WithoutXIRR" expression="[ClientHoldings.body:/root/RequestBody/WithoutXIRR]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.16" xpath="client_holdings.body:/root/RequestBody/WithoutXIRR"/>
+            </children>
+          </children>
+        </nodes>
+        <nodes name="useruniquecode" expression="[ClientHoldings.body:/root/UserUniqueCode]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.18" xpath="client_holdings/useruniquecode" pattern=""/>
+        <nodes name="string" expression="ClientHoldings.string" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.17" xpath="client_holdings/string" pattern=""/>
+      </outputTrees>
+      <varTables name="Var" minimized="true"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.2/@children.0" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.0"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.2/@children.1" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.1"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.2/@children.2" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.2"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.2/@children.3" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.3"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.2/@children.4" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.4"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.2/@children.5" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.5"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.2/@children.6" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.6"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.2/@children.7" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.7"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.2/@children.8" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.8"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.2/@children.9" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.9"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.2/@children.10" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.10"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.2/@children.11" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.11"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.2/@children.12" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.12"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.2/@children.13" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.13"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.2/@children.14" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.14"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.1" target="//@node.1/@nodeData/@outputTrees.0/@nodes.2"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.3" target="//@node.1/@nodeData/@outputTrees.0/@nodes.1"/>
+    </nodeData>
+  </node>
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="-2752" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_1" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="//Code generated according to input schema and output schema&#xD;&#xA;output_row.body = input_row.body;&#xD;&#xA;output_row.useruniquecode = input_row.useruniquecode;&#xD;&#xA;output_row.string = input_row.string;&#xD;&#xA;&#xA;context.useruniquecode = input_row.useruniquecode;&#xA;//System.out.println(input_row.useruniquecode);"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="client_holdings" name="tJavaRow_1">
+      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="useruniquecode" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="string" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tRESTClient" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-2592" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTClient_1" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;http://localhost:8090/GenerateToken/&quot;"/>
+    <elementParameter field="TEXT" name="PATH" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="METHOD" value="POST"/>
+    <elementParameter field="CLOSED_LIST" name="CONTENT_TYPE" value="application/json"/>
+    <elementParameter field="CLOSED_LIST" name="ACCEPT_TYPE" value="application/json"/>
+    <elementParameter field="TABLE" name="QUERY"/>
+    <elementParameter field="CHECK" name="SERVICE_LOCATOR" value="false"/>
+    <elementParameter field="TEXT" name="SERVICE_NAMESPACE" value="&quot;http://www.talend.org/rest/&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SERVICE_ACTIVITY_MONITOR" value="false"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" value="BASIC" show="false"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" value="&quot;username&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="enc:system.encryption.key.v1:qfg1NAa+f0Nvslt4cnC9nXZ2jIbupGUeGv1WbpoiWxfxqgX63Wo=" show="false"/>
+    <elementParameter field="TEXT" name="AUTH_BEARER_TOKEN" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="NEED_AUTHORIZATION" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROLE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_BUSINESS_CORRELATION" value="false"/>
+    <elementParameter field="TEXT" name="CORRELATION_VALUE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CHECK_SERVER_IDENTITY" value="true"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="LOG_MESSAGES" value="false"/>
+    <elementParameter field="CHECK" name="FOLLOW_REDIRECTS" value="false"/>
+    <elementParameter field="CHECK" name="REDIRECT_NON_SAME_HOST" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_WEBCLIENT_OPERATION_REPORTING" value="true"/>
+    <elementParameter field="CHECK" name="CONVERT_RESPONSE_TO_DOM" value="true"/>
+    <elementParameter field="CHECK" name="UNWRAP_JSON_REQUEST" value="false"/>
+    <elementParameter field="CHECK" name="WRAP_JSON_RESPONSE" value="true"/>
+    <elementParameter field="CHECK" name="CONVERT_TYPES_TO_STRINGS" value="true"/>
+    <elementParameter field="TABLE" name="HEADERS">
+      <elementValue elementRef="NAME" value="&quot;Urls&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;https://restservicevm.milessoft.com/Client/Holdings&quot;"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="SERVICE_LOCATOR_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="TABLE" name="SERVICE_ACTIVITY_MONITOR_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_CHUNKED_ENCODING" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_TIMEOUT" value="30"/>
+    <elementParameter field="LABEL" name="CONNECTION_TIMEOUT_DESC" value="(Studio Only, See Doc for Runtime)"/>
+    <elementParameter field="TEXT" name="RECEIVE_TIMEOUT" value="60"/>
+    <elementParameter field="LABEL" name="RECEIVE_TIMEOUT_DESC" value="(Studio Only, See Doc for Runtime)"/>
+    <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" value="&quot;61.163.92.4&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" value="8080" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" value="enc:system.encryption.key.v1:8+3PEZTX0BT06nye9wY7I5msHgkVihlOajWONtAa" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="client_holdings" name="tRESTClient_1">
+      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="useruniquecode" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="string" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="RESPONSE" name="RESPONSE">
+      <column defaultValue="" key="false" length="0" name="statusCode" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="4048" name="string" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FAULT" name="FAULT">
+      <column defaultValue="" key="false" length="0" name="errorCode" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="1024" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="-2528" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_2" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="bad_request" name="bad_request">
+      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees name="row2" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+        <nodes name="errorCode" type="id_Integer" outgoingConnections="//@node.4/@nodeData/@connections.0" xpath="row2/errorCode"/>
+        <nodes name="errorMessage" type="id_String" outgoingConnections="//@node.4/@nodeData/@connections.1" xpath="row2/errorMessage"/>
+      </inputTrees>
+      <outputTrees name="bad_request">
+        <nodes name="body" expression="" type="id_Document" xpath="bad_request/body" pattern="">
+          <children xsi:type="TalendXMLMap:OutputTreeNode" name="root" expression="" type="id_String" xpath="bad_request.body:/root" loop="true" main="true" optional="true">
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="errorCode" expression="row2.errorCode" type="id_Integer" incomingConnections="//@node.4/@nodeData/@connections.0" xpath="bad_request.body:/root/errorCode"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="errorMessage" expression="row2.errorMessage" type="id_String" incomingConnections="//@node.4/@nodeData/@connections.1" xpath="bad_request.body:/root/errorMessage"/>
+          </children>
+        </nodes>
+      </outputTrees>
+      <varTables name="Var" minimized="true"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.4/@nodeData/@inputTrees.0/@nodes.0" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.4/@nodeData/@inputTrees.0/@nodes.1" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1"/>
+    </nodeData>
+  </node>
+  <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="-2336" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTResponse_1" show="false"/>
+    <elementParameter field="REST_RESPONSE_SCHEMA_TYPE" name="RESPONSE_TYPE" value="id_Document"/>
+    <elementParameter field="CLOSED_LIST" name="STATUS_CODE" value="200"/>
+    <elementParameter field="TEXT" name="CUSTOM_STATUS_CODE" value="200" show="false"/>
+    <elementParameter field="TABLE" name="RESPONSE_HEADERS"/>
+    <elementParameter field="CHECK" name="UNWRAP_JSON_RESPONSE" value="false"/>
+    <elementParameter field="TEXT" name="JSON_ARRAY_KEYS" value=""/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRESTResponse_1">
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="-2336" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="holdings" name="holdings">
+      <column comment="" key="false" length="-1" name="id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="date_entered" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="date_modified" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="modified_user_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="created_by" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="useruniquecode" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="clientcode" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="schemename" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="folio" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="quantity" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="valueofcost" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="currentprice" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="marketvalue" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="dividend" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="gainlosspercentage" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="netgain" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="commonscripcode" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="clientname" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="averagecost" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="marketvalue1" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="sortorder" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="includeamount" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="datasource" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="title" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="source" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="benchmarkxirr" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="currencyname" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="folionumber" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="inceptiondate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="id_String" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="portfolioweight" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="xirrasset" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="benchmarkxirrasset" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="l4client_code" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="fundoption" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="fundriskrating" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="sipstartdates" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="id_String" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="assetclasscode" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="assetclassname" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="isdividend" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="dividendoption" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="valueresearchrating" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="mininvamount" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="minswpunit" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="minredeemunit" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="currentfundvalue" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="awaitingholdingunit" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="awaitingholdingfundvalue" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="existingamount" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="existingunits" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="currentunits" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="switchoutallowed" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="sipaggramt" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="sipallowed" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="redeemallowed" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="swpallowed" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="costofinvestment" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="classification" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="issuer" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="maturitydate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="id_String" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="schemecode" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="elsslocking" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="iin" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="scripxirr_client" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="indexscripxirr_client" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="isin" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="amficode" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="securitycurrencycode" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees name="row1" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+        <nodes name="statusCode" type="id_Integer" xpath="row1/statusCode"/>
+        <nodes name="body" expression="" type="id_Document" xpath="row1/body">
+          <children name="root" expression="" type="id_String" xpath="row1.body:/root" main="true">
+            <children name="root" expression="" type="id_String" xpath="row1.body:/root/root" loop="true" main="true">
+              <children name="ClientCode" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.3" xpath="row1.body:/root/root/ClientCode"/>
+              <children name="SchemeName" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.4" xpath="row1.body:/root/root/SchemeName"/>
+              <children name="Folio" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.5" xpath="row1.body:/root/root/Folio"/>
+              <children name="Quantity" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.6" xpath="row1.body:/root/root/Quantity"/>
+              <children name="ValueOfCost" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.7" xpath="row1.body:/root/root/ValueOfCost"/>
+              <children name="CurrentPrice" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.8" xpath="row1.body:/root/root/CurrentPrice"/>
+              <children name="MarketValue" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.9" xpath="row1.body:/root/root/MarketValue"/>
+              <children name="Dividend" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.10" xpath="row1.body:/root/root/Dividend"/>
+              <children name="GainLossPercentage" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.11" xpath="row1.body:/root/root/GainLossPercentage"/>
+              <children name="NetGain" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.12" xpath="row1.body:/root/root/NetGain"/>
+              <children name="CommonScripCode" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.13" xpath="row1.body:/root/root/CommonScripCode"/>
+              <children name="ClientName" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.14" xpath="row1.body:/root/root/ClientName"/>
+              <children name="AverageCost" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.15" xpath="row1.body:/root/root/AverageCost"/>
+              <children name="MarketValue1" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.16" xpath="row1.body:/root/root/MarketValue1"/>
+              <children name="SortOrder" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.17" xpath="row1.body:/root/root/SortOrder"/>
+              <children name="IncludeAmount" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.18" xpath="row1.body:/root/root/IncludeAmount"/>
+              <children name="DataSource" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.19" xpath="row1.body:/root/root/DataSource"/>
+              <children name="Title" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.20" xpath="row1.body:/root/root/Title"/>
+              <children name="Source" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.21" xpath="row1.body:/root/root/Source"/>
+              <children name="BenchmarkXirr" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.22" xpath="row1.body:/root/root/BenchmarkXirr"/>
+              <children name="CurrencyName" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.23" xpath="row1.body:/root/root/CurrencyName"/>
+              <children name="FolioNumber" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.24" xpath="row1.body:/root/root/FolioNumber"/>
+              <children name="InceptionDate" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.25" xpath="row1.body:/root/root/InceptionDate"/>
+              <children name="PortfolioWeight" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.26" xpath="row1.body:/root/root/PortfolioWeight"/>
+              <children name="XirrAsset" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.27" xpath="row1.body:/root/root/XirrAsset"/>
+              <children name="BenchmarkXirrAsset" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.28" xpath="row1.body:/root/root/BenchmarkXirrAsset"/>
+              <children name="L4Client_Code" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.29" xpath="row1.body:/root/root/L4Client_Code"/>
+              <children name="FundOption" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.30" xpath="row1.body:/root/root/FundOption"/>
+              <children name="FundRiskRating" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.31" xpath="row1.body:/root/root/FundRiskRating"/>
+              <children name="SipStartDates" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.32" xpath="row1.body:/root/root/SipStartDates"/>
+              <children name="AssetClassCode" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.33" xpath="row1.body:/root/root/AssetClassCode"/>
+              <children name="AssetClassName" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.34" xpath="row1.body:/root/root/AssetClassName"/>
+              <children name="IsDividend" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.35" xpath="row1.body:/root/root/IsDividend"/>
+              <children name="DividendOption" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.36" xpath="row1.body:/root/root/DividendOption"/>
+              <children name="ValueResearchRating" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.37" xpath="row1.body:/root/root/ValueResearchRating"/>
+              <children name="MinInvAmount" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.38" xpath="row1.body:/root/root/MinInvAmount"/>
+              <children name="MinSWPUnit" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.39" xpath="row1.body:/root/root/MinSWPUnit"/>
+              <children name="MinRedeemUnit" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.40" xpath="row1.body:/root/root/MinRedeemUnit"/>
+              <children name="CurrentFundValue" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.41" xpath="row1.body:/root/root/CurrentFundValue"/>
+              <children name="AwaitingHoldingUnit" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.42" xpath="row1.body:/root/root/AwaitingHoldingUnit"/>
+              <children name="AwaitingHoldingFundValue" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.43" xpath="row1.body:/root/root/AwaitingHoldingFundValue"/>
+              <children name="ExistingAmount" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.44" xpath="row1.body:/root/root/ExistingAmount"/>
+              <children name="ExistingUnits" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.45" xpath="row1.body:/root/root/ExistingUnits"/>
+              <children name="CurrentUnits" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.46" xpath="row1.body:/root/root/CurrentUnits"/>
+              <children name="SwitchOutAllowed" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.47" xpath="row1.body:/root/root/SwitchOutAllowed"/>
+              <children name="SIPAggrAmt" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.48" xpath="row1.body:/root/root/SIPAggrAmt"/>
+              <children name="SIPAllowed" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.49" xpath="row1.body:/root/root/SIPAllowed"/>
+              <children name="REDEEMAllowed" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.50" xpath="row1.body:/root/root/REDEEMAllowed"/>
+              <children name="SWPAllowed" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.51" xpath="row1.body:/root/root/SWPAllowed"/>
+              <children name="CostofInvestment" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.52" xpath="row1.body:/root/root/CostofInvestment"/>
+              <children name="Classification" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.53" xpath="row1.body:/root/root/Classification"/>
+              <children name="Issuer" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.54" xpath="row1.body:/root/root/Issuer"/>
+              <children name="SchemeCode" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.55" xpath="row1.body:/root/root/SchemeCode"/>
+              <children name="ELSSLocking" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.56" xpath="row1.body:/root/root/ELSSLocking"/>
+              <children name="IIN" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.57" xpath="row1.body:/root/root/IIN"/>
+              <children name="scripxirr_Client" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.58" xpath="row1.body:/root/root/scripxirr_Client"/>
+              <children name="indexscripxirr_Client" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.59" xpath="row1.body:/root/root/indexscripxirr_Client"/>
+              <children name="ISIN" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.60" xpath="row1.body:/root/root/ISIN"/>
+              <children name="AMFICode" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.61" xpath="row1.body:/root/root/AMFICode"/>
+              <children name="SecurityCurrencyCode" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.62" xpath="row1.body:/root/root/SecurityCurrencyCode"/>
+              <children name="MaturityDate" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.63" xpath="row1.body:/root/root/MaturityDate"/>
+            </children>
+          </children>
+        </nodes>
+        <nodes name="string" type="id_String" xpath="row1/string"/>
+      </inputTrees>
+      <outputTrees name="holdings" allInOne="true">
+        <nodes name="id" expression="Var.ClientHoldingsID" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.0" xpath="holdings/id" pattern=""/>
+        <nodes name="date_entered" expression="Var.CurrentDate" type="id_Date" incomingConnections="//@node.6/@nodeData/@connections.1" xpath="holdings/date_entered" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;"/>
+        <nodes name="date_modified" expression="Var.CurrentDate" type="id_Date" incomingConnections="//@node.6/@nodeData/@connections.2" xpath="holdings/date_modified" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;"/>
+        <nodes name="modified_user_id" expression="&quot;1&quot;" type="id_String" xpath="holdings/modified_user_id" pattern=""/>
+        <nodes name="created_by" expression="&quot;1&quot;" type="id_String" xpath="holdings/created_by" pattern=""/>
+        <nodes name="useruniquecode" expression="context.useruniquecode" type="id_String" xpath="holdings/useruniquecode" pattern=""/>
+        <nodes name="clientcode" expression="[row1.body:/root/root/ClientCode]" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.3" xpath="holdings/clientcode" pattern=""/>
+        <nodes name="schemename" expression="[row1.body:/root/root/SchemeName]" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.4" xpath="holdings/schemename"/>
+        <nodes name="folio" expression="[row1.body:/root/root/Folio]" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.5" xpath="holdings/folio"/>
+        <nodes name="quantity" expression="[row1.body:/root/root/Quantity]" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.6" xpath="holdings/quantity"/>
+        <nodes name="valueofcost" expression="[row1.body:/root/root/ValueOfCost]" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.7" xpath="holdings/valueofcost"/>
+        <nodes name="currentprice" expression="[row1.body:/root/root/CurrentPrice]" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.8" xpath="holdings/currentprice"/>
+        <nodes name="marketvalue" expression="[row1.body:/root/root/MarketValue]" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.9" xpath="holdings/marketvalue"/>
+        <nodes name="dividend" expression="[row1.body:/root/root/Dividend]" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.10" xpath="holdings/dividend"/>
+        <nodes name="gainlosspercentage" expression="[row1.body:/root/root/GainLossPercentage]" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.11" xpath="holdings/gainlosspercentage"/>
+        <nodes name="netgain" expression="[row1.body:/root/root/NetGain]" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.12" xpath="holdings/netgain"/>
+        <nodes name="commonscripcode" expression="[row1.body:/root/root/CommonScripCode]" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.13" xpath="holdings/commonscripcode"/>
+        <nodes name="clientname" expression="[row1.body:/root/root/ClientName]" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.14" xpath="holdings/clientname"/>
+        <nodes name="averagecost" expression="[row1.body:/root/root/AverageCost]" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.15" xpath="holdings/averagecost"/>
+        <nodes name="marketvalue1" expression="[row1.body:/root/root/MarketValue1]" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.16" xpath="holdings/marketvalue1"/>
+        <nodes name="sortorder" expression="[row1.body:/root/root/SortOrder]" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.17" xpath="holdings/sortorder"/>
+        <nodes name="includeamount" expression="[row1.body:/root/root/IncludeAmount]" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.18" xpath="holdings/includeamount"/>
+        <nodes name="datasource" expression="[row1.body:/root/root/DataSource]" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.19" xpath="holdings/datasource"/>
+        <nodes name="title" expression="[row1.body:/root/root/Title]" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.20" xpath="holdings/title"/>
+        <nodes name="source" expression="[row1.body:/root/root/Source]" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.21" xpath="holdings/source"/>
+        <nodes name="benchmarkxirr" expression="[row1.body:/root/root/BenchmarkXirr]" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.22" xpath="holdings/benchmarkxirr"/>
+        <nodes name="currencyname" expression="[row1.body:/root/root/CurrencyName]" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.23" xpath="holdings/currencyname"/>
+        <nodes name="folionumber" expression="[row1.body:/root/root/FolioNumber]" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.24" xpath="holdings/folionumber"/>
+        <nodes name="inceptiondate" expression="validateJavaDate.validateJavaDate([row1.body:/root/root/InceptionDate], &quot;yyyy-MM-dd HH:mm:ss&quot;)" type="id_Date" incomingConnections="//@node.6/@nodeData/@connections.25" xpath="holdings/inceptiondate" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;"/>
+        <nodes name="portfolioweight" expression="[row1.body:/root/root/PortfolioWeight]" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.26" xpath="holdings/portfolioweight"/>
+        <nodes name="xirrasset" expression="[row1.body:/root/root/XirrAsset]" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.27" xpath="holdings/xirrasset"/>
+        <nodes name="benchmarkxirrasset" expression="[row1.body:/root/root/BenchmarkXirrAsset]" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.28" xpath="holdings/benchmarkxirrasset"/>
+        <nodes name="l4client_code" expression="[row1.body:/root/root/L4Client_Code]" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.29" xpath="holdings/l4client_code"/>
+        <nodes name="fundoption" expression="[row1.body:/root/root/FundOption]" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.30" xpath="holdings/fundoption"/>
+        <nodes name="fundriskrating" expression="[row1.body:/root/root/FundRiskRating]" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.31" xpath="holdings/fundriskrating"/>
+        <nodes name="sipstartdates" expression="validateJavaDate.validateJavaDate([row1.body:/root/root/SipStartDates], &quot;yyyy-MM-dd HH:mm:ss&quot;)" type="id_Date" incomingConnections="//@node.6/@nodeData/@connections.32" xpath="holdings/sipstartdates" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;"/>
+        <nodes name="assetclasscode" expression="[row1.body:/root/root/AssetClassCode]" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.33" xpath="holdings/assetclasscode"/>
+        <nodes name="assetclassname" expression="[row1.body:/root/root/AssetClassName]" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.34" xpath="holdings/assetclassname"/>
+        <nodes name="isdividend" expression="[row1.body:/root/root/IsDividend]" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.35" xpath="holdings/isdividend"/>
+        <nodes name="dividendoption" expression="[row1.body:/root/root/DividendOption]" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.36" xpath="holdings/dividendoption"/>
+        <nodes name="valueresearchrating" expression="[row1.body:/root/root/ValueResearchRating]" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.37" xpath="holdings/valueresearchrating"/>
+        <nodes name="mininvamount" expression="[row1.body:/root/root/MinInvAmount]" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.38" xpath="holdings/mininvamount"/>
+        <nodes name="minswpunit" expression="[row1.body:/root/root/MinSWPUnit]" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.39" xpath="holdings/minswpunit"/>
+        <nodes name="minredeemunit" expression="[row1.body:/root/root/MinRedeemUnit]" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.40" xpath="holdings/minredeemunit"/>
+        <nodes name="currentfundvalue" expression="[row1.body:/root/root/CurrentFundValue]" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.41" xpath="holdings/currentfundvalue"/>
+        <nodes name="awaitingholdingunit" expression="[row1.body:/root/root/AwaitingHoldingUnit]" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.42" xpath="holdings/awaitingholdingunit"/>
+        <nodes name="awaitingholdingfundvalue" expression="[row1.body:/root/root/AwaitingHoldingFundValue]" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.43" xpath="holdings/awaitingholdingfundvalue"/>
+        <nodes name="existingamount" expression="[row1.body:/root/root/ExistingAmount]" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.44" xpath="holdings/existingamount"/>
+        <nodes name="existingunits" expression="[row1.body:/root/root/ExistingUnits]" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.45" xpath="holdings/existingunits"/>
+        <nodes name="currentunits" expression="[row1.body:/root/root/CurrentUnits]" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.46" xpath="holdings/currentunits"/>
+        <nodes name="switchoutallowed" expression="[row1.body:/root/root/SwitchOutAllowed]" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.47" xpath="holdings/switchoutallowed"/>
+        <nodes name="sipaggramt" expression="[row1.body:/root/root/SIPAggrAmt]" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.48" xpath="holdings/sipaggramt"/>
+        <nodes name="sipallowed" expression="[row1.body:/root/root/SIPAllowed]" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.49" xpath="holdings/sipallowed"/>
+        <nodes name="redeemallowed" expression="[row1.body:/root/root/REDEEMAllowed]" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.50" xpath="holdings/redeemallowed"/>
+        <nodes name="swpallowed" expression="[row1.body:/root/root/SWPAllowed]" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.51" xpath="holdings/swpallowed"/>
+        <nodes name="costofinvestment" expression="[row1.body:/root/root/CostofInvestment]" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.52" xpath="holdings/costofinvestment"/>
+        <nodes name="classification" expression="[row1.body:/root/root/Classification]" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.53" xpath="holdings/classification"/>
+        <nodes name="issuer" expression="[row1.body:/root/root/Issuer]" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.54" xpath="holdings/issuer"/>
+        <nodes name="maturitydate" expression="validateJavaDate.validateJavaDate([row1.body:/root/root/MaturityDate], &quot;yyyy-MM-dd HH:mm:ss&quot;) " type="id_Date" incomingConnections="//@node.6/@nodeData/@connections.63" xpath="holdings/maturitydate" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;"/>
+        <nodes name="schemecode" expression="[row1.body:/root/root/SchemeCode]" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.55" xpath="holdings/schemecode"/>
+        <nodes name="elsslocking" expression="[row1.body:/root/root/ELSSLocking]" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.56" xpath="holdings/elsslocking"/>
+        <nodes name="iin" expression="[row1.body:/root/root/IIN]" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.57" xpath="holdings/iin"/>
+        <nodes name="scripxirr_client" expression="[row1.body:/root/root/scripxirr_Client]" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.58" xpath="holdings/scripxirr_client"/>
+        <nodes name="indexscripxirr_client" expression="[row1.body:/root/root/indexscripxirr_Client]" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.59" xpath="holdings/indexscripxirr_client"/>
+        <nodes name="isin" expression="[row1.body:/root/root/ISIN]" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.60" xpath="holdings/isin"/>
+        <nodes name="amficode" expression="[row1.body:/root/root/AMFICode]" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.61" xpath="holdings/amficode"/>
+        <nodes name="securitycurrencycode" expression="[row1.body:/root/root/SecurityCurrencyCode]" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.62" xpath="holdings/securitycurrencycode"/>
+      </outputTrees>
+      <varTables name="Var">
+        <nodes name="ClientHoldingsID" expression="java.util.UUID.randomUUID().toString()" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.0"/>
+        <nodes name="CurrentDate" expression="TalendDate.getCurrentDate() " type="id_Date" outgoingConnections="//@node.6/@nodeData/@connections.1 //@node.6/@nodeData/@connections.2"/>
+      </varTables>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@varTables.0/@nodes.0" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@varTables.0/@nodes.1" target="//@node.6/@nodeData/@outputTrees.0/@nodes.1"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@varTables.0/@nodes.1" target="//@node.6/@nodeData/@outputTrees.0/@nodes.2"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.0" target="//@node.6/@nodeData/@outputTrees.0/@nodes.6"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.1" target="//@node.6/@nodeData/@outputTrees.0/@nodes.7"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.2" target="//@node.6/@nodeData/@outputTrees.0/@nodes.8"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.3" target="//@node.6/@nodeData/@outputTrees.0/@nodes.9"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.4" target="//@node.6/@nodeData/@outputTrees.0/@nodes.10"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.5" target="//@node.6/@nodeData/@outputTrees.0/@nodes.11"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.6" target="//@node.6/@nodeData/@outputTrees.0/@nodes.12"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.7" target="//@node.6/@nodeData/@outputTrees.0/@nodes.13"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.8" target="//@node.6/@nodeData/@outputTrees.0/@nodes.14"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.9" target="//@node.6/@nodeData/@outputTrees.0/@nodes.15"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.10" target="//@node.6/@nodeData/@outputTrees.0/@nodes.16"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.11" target="//@node.6/@nodeData/@outputTrees.0/@nodes.17"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.12" target="//@node.6/@nodeData/@outputTrees.0/@nodes.18"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.13" target="//@node.6/@nodeData/@outputTrees.0/@nodes.19"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.14" target="//@node.6/@nodeData/@outputTrees.0/@nodes.20"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.15" target="//@node.6/@nodeData/@outputTrees.0/@nodes.21"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.16" target="//@node.6/@nodeData/@outputTrees.0/@nodes.22"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.17" target="//@node.6/@nodeData/@outputTrees.0/@nodes.23"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.18" target="//@node.6/@nodeData/@outputTrees.0/@nodes.24"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.19" target="//@node.6/@nodeData/@outputTrees.0/@nodes.25"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.20" target="//@node.6/@nodeData/@outputTrees.0/@nodes.26"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.21" target="//@node.6/@nodeData/@outputTrees.0/@nodes.27"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.22" target="//@node.6/@nodeData/@outputTrees.0/@nodes.28"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.23" target="//@node.6/@nodeData/@outputTrees.0/@nodes.29"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.24" target="//@node.6/@nodeData/@outputTrees.0/@nodes.30"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.25" target="//@node.6/@nodeData/@outputTrees.0/@nodes.31"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.26" target="//@node.6/@nodeData/@outputTrees.0/@nodes.32"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.27" target="//@node.6/@nodeData/@outputTrees.0/@nodes.33"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.28" target="//@node.6/@nodeData/@outputTrees.0/@nodes.34"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.29" target="//@node.6/@nodeData/@outputTrees.0/@nodes.35"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.30" target="//@node.6/@nodeData/@outputTrees.0/@nodes.36"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.31" target="//@node.6/@nodeData/@outputTrees.0/@nodes.37"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.32" target="//@node.6/@nodeData/@outputTrees.0/@nodes.38"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.33" target="//@node.6/@nodeData/@outputTrees.0/@nodes.39"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.34" target="//@node.6/@nodeData/@outputTrees.0/@nodes.40"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.35" target="//@node.6/@nodeData/@outputTrees.0/@nodes.41"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.36" target="//@node.6/@nodeData/@outputTrees.0/@nodes.42"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.37" target="//@node.6/@nodeData/@outputTrees.0/@nodes.43"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.38" target="//@node.6/@nodeData/@outputTrees.0/@nodes.44"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.39" target="//@node.6/@nodeData/@outputTrees.0/@nodes.45"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.40" target="//@node.6/@nodeData/@outputTrees.0/@nodes.46"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.41" target="//@node.6/@nodeData/@outputTrees.0/@nodes.47"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.42" target="//@node.6/@nodeData/@outputTrees.0/@nodes.48"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.43" target="//@node.6/@nodeData/@outputTrees.0/@nodes.49"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.44" target="//@node.6/@nodeData/@outputTrees.0/@nodes.50"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.45" target="//@node.6/@nodeData/@outputTrees.0/@nodes.51"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.46" target="//@node.6/@nodeData/@outputTrees.0/@nodes.52"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.47" target="//@node.6/@nodeData/@outputTrees.0/@nodes.53"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.48" target="//@node.6/@nodeData/@outputTrees.0/@nodes.54"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.49" target="//@node.6/@nodeData/@outputTrees.0/@nodes.55"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.50" target="//@node.6/@nodeData/@outputTrees.0/@nodes.56"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.51" target="//@node.6/@nodeData/@outputTrees.0/@nodes.57"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.52" target="//@node.6/@nodeData/@outputTrees.0/@nodes.59"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.53" target="//@node.6/@nodeData/@outputTrees.0/@nodes.60"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.54" target="//@node.6/@nodeData/@outputTrees.0/@nodes.61"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.55" target="//@node.6/@nodeData/@outputTrees.0/@nodes.62"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.56" target="//@node.6/@nodeData/@outputTrees.0/@nodes.63"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.57" target="//@node.6/@nodeData/@outputTrees.0/@nodes.64"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.58" target="//@node.6/@nodeData/@outputTrees.0/@nodes.65"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.59" target="//@node.6/@nodeData/@outputTrees.0/@nodes.66"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.60" target="//@node.6/@nodeData/@outputTrees.0/@nodes.58"/>
+    </nodeData>
+  </node>
+  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-2112" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:StyiT3ztZWMJI8JLG69eEvSTwaNsFwwNWWS5E/IE" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;ch_clientholdings&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="LABEL" name="NOTE" value="NOTE: batch size must be less than or equal to total number of parameter markers divided by number of columns" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_IDENTITY_FIELD" value="false" show="false"/>
+    <elementParameter field="COLUMN_LIST" name="IDENTITY_FIELD" value="id" show="false"/>
+    <elementParameter field="TEXT" name="START_VALUE" value="1" show="false"/>
+    <elementParameter field="TEXT" name="STEP" value="1" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_ALTERNATE_SCHEMA" value="false"/>
+    <elementParameter field="TEXT" name="ALTERNATE_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000" show="false"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="date_entered"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="date_modified"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="modified_user_id"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="created_by"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="useruniquecode"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="clientcode"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="schemename"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="folio"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="quantity"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="valueofcost"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="currentprice"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="marketvalue"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dividend"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="gainlosspercentage"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="netgain"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="commonscripcode"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="clientname"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="averagecost"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="marketvalue1"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="sortorder"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="includeamount"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="datasource"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="title"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="source"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="benchmarkxirr"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="currencyname"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="folionumber"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="inceptiondate"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="portfolioweight"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="xirrasset"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="benchmarkxirrasset"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="l4client_code"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="fundoption"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="fundriskrating"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="sipstartdates"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="assetclasscode"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="assetclassname"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="isdividend"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dividendoption"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="valueresearchrating"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="mininvamount"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="minswpunit"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="minredeemunit"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="currentfundvalue"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="awaitingholdingunit"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="awaitingholdingfundvalue"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="existingamount"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="existingunits"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="currentunits"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="switchoutallowed"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="sipaggramt"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="sipallowed"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="redeemallowed"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="swpallowed"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="costofinvestment"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="classification"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="issuer"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="maturitydate"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="schemecode"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="elsslocking"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="iin"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="scripxirr_client"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="indexscripxirr_client"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="isin"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="amficode"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="securitycurrencycode"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="IGNORE_DATE_OUTOF_RANGE" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="holdings" name="tDBOutput_1">
+      <column comment="" key="false" length="-1" name="id" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="date_entered" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="date_modified" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="modified_user_id" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="created_by" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="useruniquecode" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="clientcode" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="schemename" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="folio" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="quantity" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="valueofcost" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="currentprice" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="marketvalue" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="dividend" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="gainlosspercentage" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="netgain" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="commonscripcode" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="clientname" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="averagecost" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="marketvalue1" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="sortorder" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="includeamount" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="datasource" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="title" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="source" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="benchmarkxirr" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="currencyname" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="folionumber" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="inceptiondate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="portfolioweight" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="xirrasset" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="benchmarkxirrasset" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="l4client_code" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="fundoption" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="fundriskrating" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="sipstartdates" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="assetclasscode" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="assetclassname" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="isdividend" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="dividendoption" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="valueresearchrating" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="mininvamount" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="minswpunit" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="minredeemunit" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="currentfundvalue" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="awaitingholdingunit" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="awaitingholdingfundvalue" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="existingamount" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="existingunits" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="currentunits" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="switchoutallowed" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="sipaggramt" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="sipallowed" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="redeemallowed" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="swpallowed" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="costofinvestment" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="classification" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="issuer" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="maturitydate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="schemecode" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="elsslocking" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="iin" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="scripxirr_client" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="indexscripxirr_client" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="isin" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="amficode" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="securitycurrencycode" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="holdings" name="REJECT">
+      <column comment="" key="false" length="-1" name="id" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="date_entered" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="date_modified" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="modified_user_id" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="created_by" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="useruniquecode" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="clientcode" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="schemename" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="folio" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="quantity" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="valueofcost" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="currentprice" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="marketvalue" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="dividend" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="gainlosspercentage" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="netgain" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="commonscripcode" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="clientname" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="averagecost" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="marketvalue1" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="sortorder" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="includeamount" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="datasource" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="title" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="source" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="benchmarkxirr" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="currencyname" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="folionumber" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="inceptiondate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="portfolioweight" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="xirrasset" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="benchmarkxirrasset" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="l4client_code" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="fundoption" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="fundriskrating" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="sipstartdates" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="assetclasscode" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="assetclassname" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="isdividend" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="dividendoption" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="valueresearchrating" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="mininvamount" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="minswpunit" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="minredeemunit" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="currentfundvalue" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="awaitingholdingunit" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="awaitingholdingfundvalue" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="existingamount" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="existingunits" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="currentunits" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="switchoutallowed" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="sipaggramt" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="sipallowed" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="redeemallowed" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="swpallowed" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="costofinvestment" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="classification" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="issuer" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="maturitydate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="schemecode" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="elsslocking" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="iin" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="scripxirr_client" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="indexscripxirr_client" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="isin" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="amficode" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="securitycurrencycode" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="-1888" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTResponse_2" show="false"/>
+    <elementParameter field="REST_RESPONSE_SCHEMA_TYPE" name="RESPONSE_TYPE" value="id_Document"/>
+    <elementParameter field="CLOSED_LIST" name="STATUS_CODE" value="200"/>
+    <elementParameter field="TEXT" name="CUSTOM_STATUS_CODE" value="200" show="false"/>
+    <elementParameter field="TABLE" name="RESPONSE_HEADERS"/>
+    <elementParameter field="CHECK" name="UNWRAP_JSON_RESPONSE" value="false"/>
+    <elementParameter field="TEXT" name="JSON_ARRAY_KEYS" value=""/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRESTResponse_2">
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-3040" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBConnection_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_O6vtgFi5EeynwYsAcnhgZQ" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;DESKTOP-7JLKFQ7&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;dbo&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;miles&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;MyLogin&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:aWEX202EJzdyZzCiJzAS7RSO+VUdG4kWVOXF9sx5gkqa"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;com.ibm.jsse2.overrideDefaultTLS=true&quot;"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" value="" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="true"/>
+    <elementParameter field="CHECK" name="SHARE_IDENTITY_SETTING" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <connection connectorName="FLOW" label="ClientHoldings" lineStyle="0" metaname="ClientHoldings" offsetLabelX="0" offsetLabelY="0" source="tRESTRequest_1" target="tXMLMap_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="ClientHoldings" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="client_holdings" lineStyle="0" metaname="client_holdings" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_3" target="tJavaRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="client_holdings" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tJavaRow_1" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_1" target="tRESTClient_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+  </connection>
+  <connection connectorName="RESPONSE" label="row1" lineStyle="0" metaname="RESPONSE" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tRESTClient_1" target="tXMLMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="FAULT" label="row2" lineStyle="0" metaname="FAULT" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tRESTClient_1" target="tXMLMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="bad_request" lineStyle="0" metaname="bad_request" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_2" target="tRESTResponse_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="bad_request" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="holdings" lineStyle="0" metaname="holdings" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="tDBOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="holdings" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tDBOutput_1" offsetLabelX="0" offsetLabelY="0" source="tDBOutput_1" target="tRESTResponse_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBConnection_1" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_1" target="tRESTRequest_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTRequest_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBConnection_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

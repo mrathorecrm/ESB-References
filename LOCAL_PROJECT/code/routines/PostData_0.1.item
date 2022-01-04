@@ -1,0 +1,66 @@
+package routines;
+import com.squareup.okhttp.internal.*;
+
+import com.squareup.okhttp.MediaType;
+import com.squareup.okhttp.OkHttpClient;
+import com.squareup.okhttp.Request;
+import com.squareup.okhttp.RequestBody;
+import com.squareup.okhttp.Response;
+
+/*
+ * user specification: the function's comment should contain keys as follows: 1. write about the function's comment.but
+ * it must be before the "{talendTypes}" key.
+ * 
+ * 2. {talendTypes} 's value must be talend Type, it is required . its value should be one of: String, char | Character,
+ * long | Long, int | Integer, boolean | Boolean, byte | Byte, Date, double | Double, float | Float, Object, short |
+ * Short
+ * 
+ * 3. {Category} define a category for the Function. it is required. its value is user-defined .
+ * 
+ * 4. {param} 's format is: {param} <type>[(<default value or closed list values>)] <name>[ : <comment>]
+ * 
+ * <type> 's value should be one of: string, int, list, double, object, boolean, long, char, date. <name>'s value is the
+ * Function's parameter name. the {param} is optional. so if you the Function without the parameters. the {param} don't
+ * added. you can have many parameters for the Function.
+ * 
+ * 5. {example} gives a example for the Function. it is optional.
+ */
+public class PostData {
+
+    /**
+     * helloExample: not return value, only print "hello" + message.
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("world") input: The string need to be printed.
+     * 
+     * {example} helloExemple("world") # hello world !.
+     */
+    public static String PostData(String tpa, String headerhost, String URLs) {
+    	String s="";
+    	try {
+    		OkHttpClient client = new OkHttpClient();
+
+			MediaType mediaType = MediaType.parse("application/json");
+
+			String req = "m44Ms87tLFPne4sY2E8zjdw0ipeU2Wek6VEJtHD0DxVdHq6UtgrVB+Ds85Y3is5WpoHoXHgh5r+DMt3NIimPJif0hH1vMmLfO0XcjFhunD5D8sTQwXoC/dysFv9x6F6OvDEfN9iTsYk8e8uXI1iivBxDja8X9mZTpFTYNH0Gr5ahmRGGfIS4afc52Hg0oHmV53gxGLRZw57dCp4BEbsQOEC6d7uQLB0eiTnQenTWULgU7xiVjFnU/R65iuGTdb5a7oIr1iSUQdAZKLr/MCU5gH/xivkq1blMGOukkNR+lWYKhND+iudktdEMXF91y1qELYf1WqoC1K7vIu/Pvh9B4ar3GUEc2DtFf1+94xEQ3gaCHXHm+u4QW3zhGgBHaB9yDdzlAMexQQX1HrdzPpg/OSLWQxrMrfRQOKc5dbRunlO7VyDFEHNTxmDzFb7GPPDsn7mXFUmNsGrh+iT2VeVwP3dxvwD+fXg+zaaVqZaAk6pPRqLNHoz2IgXf9lQDW95I0dH2JwBdxaduZqUBB4mENyUZAmXF3FNBkFLtcSyiFkzmMJH5TYmvUGZgkwrldmjDFCemY/8sRZs3Rj0W50Iu/Pd5wY606I1LtqTbFuFWKBvek88LwyF5d+SqjpFjwE/QXDO/S22ruB4s2i4F0jGaiECLYi0n3Zv23iiE94GG51w=";
+
+			RequestBody body = RequestBody.create(mediaType, req);
+			Request request = new Request.Builder()
+			  .url(URLs)
+			  .method("POST", body)
+			  .addHeader("Host", headerhost)
+			  .addHeader("Content-type", "application/json")
+			  .addHeader("TPA", tpa).build();
+			
+			Response response = client.newCall(request).execute();   
+			s= response.body().string();
+			return s;
+    	}
+    	catch(Exception e) {}
+    	return s;
+    }	
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_tTnXYDrTEey8re2AfnU08Q" name="SimpleCRMlocal" id="_V1zpIDrTEey8re2AfnU08Q" label="SimpleCRMlocal" dataPackage="_ITlz8DsYEeyrivmUhko7iw" DatabaseType="MySQL" DriverClass="org.gjt.mm.mysql.Driver" URL="jdbc:mysql://localhost:3306/crm_demo?noDatetimeStringSync=true" dbVersionString="MYSQL_5" Port="3306" Username="local_user" Password="enc:system.encryption.key.v1:tByu3uE10sH80nl1CpcoMusTpIzpGhVm6RUSVQqsfbn8R8nVVxUO7A==" ServerName="localhost" DatasourceName="" FileFieldName="" SID="crm_demo" SqlSynthax="" StringQuote="" NullChar="" DbmsId="mysql_id" ProductId="MYSQL" AdditionalParams="noDatetimeStringSync=true" StandardSQL="true" SQLMode="false" UiSchema="">
+    <taggedValue xmi:id="_tTn-cDrTEey8re2AfnU08Q" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_tcrMwDrTEey8re2AfnU08Q" tag="package filter" value=""/>
+    <taggedValue xmi:id="_tlYc0DrTEey8re2AfnU08Q" tag="Status" value=""/>
+    <taggedValue xmi:id="_tlYc0TrTEey8re2AfnU08Q" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_tlYc0jrTEey8re2AfnU08Q" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_tlYc0zrTEey8re2AfnU08Q" tag="Description" value=""/>
+    <taggedValue xmi:id="_tlYc1DrTEey8re2AfnU08Q" tag="Author" value=""/>
+    <taggedValue xmi:id="_tlYc1TrTEey8re2AfnU08Q" tag="otherParameter"/>
+    <taggedValue xmi:id="_tl_g0DrTEey8re2AfnU08Q" tag="DB ProductName" value="MySQL"/>
+    <taggedValue xmi:id="_tl_g0TrTEey8re2AfnU08Q" tag="DB ProductVersion" value="5.7.31"/>
+    <taggedValue xmi:id="_tl_g0jrTEey8re2AfnU08Q" tag="DB IdentifierQuoteString" value="`"/>
+    <parameters xmi:id="_tTn-cTrTEey8re2AfnU08Q" key="CONN_PARA_KEY_USERNAME" value="local_user"/>
+    <parameters xmi:id="_uY_EADrTEey8re2AfnU08Q" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_ITlz8DsYEeyrivmUhko7iw" name="crm_demo" dataManager="_tTnXYDrTEey8re2AfnU08Q"/>
+</xmi:XMI>

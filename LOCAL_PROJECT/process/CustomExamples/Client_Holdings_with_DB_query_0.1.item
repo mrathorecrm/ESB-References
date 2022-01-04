@@ -1,0 +1,739 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendXMLMap="http://www.talend.org/xmlmap" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="client_code" prompt="client_code?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="useruniquecode" prompt="useruniquecode?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="body" prompt="body?" promptNeeded="false" type="id_Directory" value=""/>
+    <contextParameter comment="" name="string" prompt="string?" promptNeeded="false" type="id_String" value=""/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:95aGnW8uxnxlQhS3Jq/1nZTWqjoB2wRk08BHWNda" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/TOS_ESB-20200219_1130-V7.3.1/Studio/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_12" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:/fFMBDFQS2A13TEaZXYfFqKdCrpQGMtbXJ0DRE1y" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_7eA7gFQ4Eey09roxPsO9nQ" name="DataOperation"/>
+    <routinesParameter id="_7h_ckFQ4Eey09roxPsO9nQ" name="Mathematical"/>
+    <routinesParameter id="_7i6poFQ4Eey09roxPsO9nQ" name="Numeric"/>
+    <routinesParameter id="_7jDMgFQ4Eey09roxPsO9nQ" name="Relational"/>
+    <routinesParameter id="_7jgfgFQ4Eey09roxPsO9nQ" name="StringHandling"/>
+    <routinesParameter id="_7jji0FQ4Eey09roxPsO9nQ" name="TalendDataGenerator"/>
+    <routinesParameter id="_7kYCMFQ4Eey09roxPsO9nQ" name="TalendDate"/>
+    <routinesParameter id="_7kungFQ4Eey09roxPsO9nQ" name="TalendStringUtil"/>
+    <routinesParameter id="_7kq9IFQ4Eey09roxPsO9nQ" name="TalendString"/>
+  </parameters>
+  <node componentName="tMSSqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBConnection_1" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;DESKTOP-7JLKFQ7&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;dbo&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;miles&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;MyLogin&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:GlJ0zJUbRq31HX1bE/3f5lre/r02sWaYbcCVFVyWGVkl"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;com.ibm.jsse2.overrideDefaultTLS=true&quot;"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" value="" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="true"/>
+    <elementParameter field="CHECK" name="SHARE_IDENTITY_SETTING" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tRESTRequest" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="128" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTRequest_1" show="false"/>
+    <elementParameter field="TEXT" name="API_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="REST_ENDPOINT" value="&quot;http://localhost:8088/&quot;"/>
+    <elementParameter field="TABLE" name="SCHEMAS">
+      <elementValue elementRef="SCHEMA" value="ClientHoldings"/>
+      <elementValue elementRef="HTTP_VERB" value="POST"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;Client/Holdings&quot;"/>
+      <elementValue elementRef="CONSUMES" value="JSON"/>
+      <elementValue elementRef="PRODUCES" value="JSON"/>
+      <elementValue elementRef="STREAMING" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="SERVICE_LOCATOR" value="false"/>
+    <elementParameter field="TEXT" name="SERVICE_NAMESPACE" value="&quot;http://www.talend.org/rest/&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SERVICE_NAME" value="&quot;Client_Profile&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SERVICE_ACTIVITY_MONITOR" value="false"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" value="BASIC" show="false"/>
+    <elementParameter field="CHECK" name="NEED_AUTHORIZATION" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_BUSINESS_CORRELATION" value="false"/>
+    <elementParameter field="CHECK" name="LOG_MESSAGES" value="false"/>
+    <elementParameter field="CHECK" name="WRAP_JSON_REQUEST" value="true"/>
+    <elementParameter field="TABLE" name="SERVICE_LOCATOR_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="TABLE" name="SERVICE_ACTIVITY_MONITOR_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="CHECK" name="CONVERT_JSON_VALUES_TO_STRING" value="false"/>
+    <elementParameter field="CHECK" name="EXPOSE_SWAGGER_SPEC" value="false" show="false"/>
+    <elementParameter field="CHECK" name="INCLUDE_DOC_INTO_SWAGGER_SPEC" value="true" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="WRONG_CALLS" name="WRONG_CALLS">
+      <column defaultValue="" key="false" length="255" name="uri" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="method" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="status" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="1024" name="error" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" label="ClientHoldings" name="ClientHoldings">
+      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="string" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="384" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_3" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="client_holdings" name="client">
+      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="string" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="client_code" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees name="ClientHoldings" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+        <nodes name="body" expression="" type="id_Document" xpath="ClientHoldings/body">
+          <children name="root" expression="" type="id_String" xpath="ClientHoldings.body:/root" main="true">
+            <children name="UniqueIdentifier" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.2" xpath="ClientHoldings.body:/root/UniqueIdentifier"/>
+            <children name="Source" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.3" xpath="ClientHoldings.body:/root/Source"/>
+            <children name="RequestBody" expression="" type="id_String" xpath="ClientHoldings.body:/root/RequestBody" loop="true" main="true">
+              <children name="UserId" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.4" xpath="ClientHoldings.body:/root/RequestBody/UserId"/>
+              <children name="UserType" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.5" xpath="ClientHoldings.body:/root/RequestBody/UserType"/>
+              <children name="UserCode" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.0 //@node.2/@nodeData/@connections.6" xpath="ClientHoldings.body:/root/RequestBody/UserCode"/>
+              <children name="LastBusinessDate" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.7" xpath="ClientHoldings.body:/root/RequestBody/LastBusinessDate"/>
+              <children name="CurrencyCode" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.8" xpath="ClientHoldings.body:/root/RequestBody/CurrencyCode"/>
+              <children name="AmountDenomination" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.9" xpath="ClientHoldings.body:/root/RequestBody/AmountDenomination"/>
+              <children name="IndexType" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.10" xpath="ClientHoldings.body:/root/RequestBody/IndexType"/>
+              <children name="AccountLevel" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.11" xpath="ClientHoldings.body:/root/RequestBody/AccountLevel"/>
+              <children name="IsFundware" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.12" xpath="ClientHoldings.body:/root/RequestBody/IsFundware"/>
+              <children name="AssetAllocation" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.13" xpath="ClientHoldings.body:/root/RequestBody/AssetAllocation"/>
+              <children name="Advisory" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.14" xpath="ClientHoldings.body:/root/RequestBody/Advisory"/>
+              <children name="ISAlldataRequired" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.15" xpath="ClientHoldings.body:/root/RequestBody/ISAlldataRequired"/>
+              <children name="ClientType" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.16" xpath="ClientHoldings.body:/root/RequestBody/ClientType"/>
+              <children name="ReadUCC" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.17" xpath="ClientHoldings.body:/root/RequestBody/ReadUCC"/>
+              <children name="WithoutXIRR" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.18" xpath="ClientHoldings.body:/root/RequestBody/WithoutXIRR"/>
+            </children>
+          </children>
+        </nodes>
+        <nodes name="string" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.1" xpath="ClientHoldings/string"/>
+      </inputTrees>
+      <outputTrees name="client">
+        <nodes name="body" expression="" type="id_Document" xpath="client/body" pattern="">
+          <children xsi:type="TalendXMLMap:OutputTreeNode" name="root" expression="" type="id_String" xpath="client.body:/root" main="true">
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="UniqueIdentifier" expression="[ClientHoldings.body:/root/UniqueIdentifier]" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.2" xpath="client.body:/root/UniqueIdentifier"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="Source" expression="[ClientHoldings.body:/root/Source]" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.3" xpath="client.body:/root/Source"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="RequestBody" expression="" type="id_String" xpath="client.body:/root/RequestBody" loop="true" main="true">
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="UserId" expression="[ClientHoldings.body:/root/RequestBody/UserId]" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.4" xpath="client.body:/root/RequestBody/UserId"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="UserType" expression="[ClientHoldings.body:/root/RequestBody/UserType]" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.5" xpath="client.body:/root/RequestBody/UserType"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="UserCode" expression="[ClientHoldings.body:/root/RequestBody/UserCode]" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.6" xpath="client.body:/root/RequestBody/UserCode"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="LastBusinessDate" expression="[ClientHoldings.body:/root/RequestBody/LastBusinessDate]" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.7" xpath="client.body:/root/RequestBody/LastBusinessDate"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="CurrencyCode" expression="[ClientHoldings.body:/root/RequestBody/CurrencyCode]" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.8" xpath="client.body:/root/RequestBody/CurrencyCode"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="AmountDenomination" expression="[ClientHoldings.body:/root/RequestBody/AmountDenomination]" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.9" xpath="client.body:/root/RequestBody/AmountDenomination"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="IndexType" expression="[ClientHoldings.body:/root/RequestBody/IndexType]" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.10" xpath="client.body:/root/RequestBody/IndexType"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="AccountLevel" expression="[ClientHoldings.body:/root/RequestBody/AccountLevel]" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.11" xpath="client.body:/root/RequestBody/AccountLevel"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="IsFundware" expression="[ClientHoldings.body:/root/RequestBody/IsFundware]" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.12" xpath="client.body:/root/RequestBody/IsFundware"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="AssetAllocation" expression="[ClientHoldings.body:/root/RequestBody/AssetAllocation]" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.13" xpath="client.body:/root/RequestBody/AssetAllocation"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="Advisory" expression="[ClientHoldings.body:/root/RequestBody/Advisory]" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.14" xpath="client.body:/root/RequestBody/Advisory"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="ISAlldataRequired" expression="[ClientHoldings.body:/root/RequestBody/ISAlldataRequired]" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.15" xpath="client.body:/root/RequestBody/ISAlldataRequired"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="ClientType" expression="[ClientHoldings.body:/root/RequestBody/ClientType]" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.16" xpath="client.body:/root/RequestBody/ClientType"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="ReadUCC" expression="[ClientHoldings.body:/root/RequestBody/ReadUCC]" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.17" xpath="client.body:/root/RequestBody/ReadUCC"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="WithoutXIRR" expression="[ClientHoldings.body:/root/RequestBody/WithoutXIRR]" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.18" xpath="client.body:/root/RequestBody/WithoutXIRR"/>
+            </children>
+          </children>
+        </nodes>
+        <nodes name="string" expression="ClientHoldings.string" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.1" xpath="client/string"/>
+        <nodes name="client_code" expression="[ClientHoldings.body:/root/RequestBody/UserCode]" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.0" xpath="client/client_code"/>
+      </outputTrees>
+      <varTables name="Var" minimized="true"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.2/@children.2" target="//@node.2/@nodeData/@outputTrees.0/@nodes.2"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.1" target="//@node.2/@nodeData/@outputTrees.0/@nodes.1"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.2/@children.0" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.0"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.2/@children.1" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.1"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.2/@children.2" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.2"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.2/@children.3" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.3"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.2/@children.4" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.4"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.2/@children.5" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.5"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.2/@children.6" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.6"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.2/@children.7" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.7"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.2/@children.8" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.8"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.2/@children.9" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.9"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.2/@children.10" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.10"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.2/@children.11" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.11"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.2/@children.12" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.12"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.2/@children.13" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.13"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.2/@children.14" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.14"/>
+    </nodeData>
+  </node>
+  <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSetGlobalVar_1" show="false"/>
+    <elementParameter field="TABLE" name="VARIABLES">
+      <elementValue elementRef="KEY" value="&quot;inputBody&quot;"/>
+      <elementValue elementRef="VALUE" value="client.body"/>
+      <elementValue elementRef="KEY" value="&quot;inputString&quot;"/>
+      <elementValue elementRef="VALUE" value="client.string"/>
+      <elementValue elementRef="KEY" value="&quot;client_code&quot;"/>
+      <elementValue elementRef="VALUE" value="client.client_code"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="client_holdings" name="tSetGlobalVar_1">
+      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="string" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="client_code" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="96" posY="448">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="String foo = &quot;bar&quot;;&#xA;&#xA;System.out.println(&quot;tJavaTable:TBL Loaded&quot; + (String)globalMap.get(&quot;tDBInput_1_QUERY&quot;));"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_1">
+      <column comment="" key="false" length="255" name="useruniquecode_c" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Iynh0oTkPqKP6w87MphDa7mgAHHRXfLig5kbXaeB" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;miles_clientprofile_cstm&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT dbo.miles_clientprofile_cstm.useruniquecode_c &#xA;FROM&#x9; dbo.miles_clientprofile_cstm&#xD;&#xA;WHERE dbo.miles_clientprofile_cstm.clientcode_c = '&quot;+(String)globalMap.get(&quot;client_code&quot;)+&quot;'&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="useruniquecode_c"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_1">
+      <column comment="" key="false" length="-1" name="useruniquecode_c" nullable="true" pattern="" precision="-1" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="288" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_2" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="//Code generated according to input schema and output schema&#xD;&#xA;output_row.useruniquecode_c = input_row.useruniquecode_c;&#xD;&#xA;output_row.body = (Document)globalMap.get(&quot;inputBody&quot;);&#xA;output_row.string = (String)globalMap.get(&quot;inputString&quot;);&#xA;&#xA;context.useruniquecode = input_row.useruniquecode_c;&#xA;&#xA;//System.out.println(globalMap.get(&quot;inputBody&quot;));&#xA;//System.out.println((String)globalMap.get(&quot;inputString&quot;));"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJavaRow_2">
+      <column comment="" key="false" length="-1" name="useruniquecode_c" nullable="true" pattern="" precision="-1" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="string" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tRESTClient" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTClient_1" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;http://localhost:8090/GenerateToken/&quot;"/>
+    <elementParameter field="TEXT" name="PATH" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="METHOD" value="POST"/>
+    <elementParameter field="CLOSED_LIST" name="CONTENT_TYPE" value="application/json"/>
+    <elementParameter field="CLOSED_LIST" name="ACCEPT_TYPE" value="application/json"/>
+    <elementParameter field="TABLE" name="QUERY"/>
+    <elementParameter field="CHECK" name="SERVICE_LOCATOR" value="false"/>
+    <elementParameter field="TEXT" name="SERVICE_NAMESPACE" value="&quot;http://www.talend.org/rest/&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SERVICE_ACTIVITY_MONITOR" value="false"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" value="BASIC" show="false"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" value="&quot;username&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="enc:system.encryption.key.v1:U1k/bDRsMXqqoYU9YCaRQ22+labf7cjxensGW2oiqDSRoa4KJK4=" show="false"/>
+    <elementParameter field="TEXT" name="AUTH_BEARER_TOKEN" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="NEED_AUTHORIZATION" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROLE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_BUSINESS_CORRELATION" value="false"/>
+    <elementParameter field="TEXT" name="CORRELATION_VALUE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CHECK_SERVER_IDENTITY" value="true"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="LOG_MESSAGES" value="false"/>
+    <elementParameter field="CHECK" name="FOLLOW_REDIRECTS" value="false"/>
+    <elementParameter field="CHECK" name="REDIRECT_NON_SAME_HOST" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_WEBCLIENT_OPERATION_REPORTING" value="true"/>
+    <elementParameter field="CHECK" name="CONVERT_RESPONSE_TO_DOM" value="true"/>
+    <elementParameter field="CHECK" name="UNWRAP_JSON_REQUEST" value="false"/>
+    <elementParameter field="CHECK" name="WRAP_JSON_RESPONSE" value="true"/>
+    <elementParameter field="CHECK" name="CONVERT_TYPES_TO_STRINGS" value="true"/>
+    <elementParameter field="TABLE" name="HEADERS">
+      <elementValue elementRef="NAME" value="&quot;Urls&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;https://restservicevm.milessoft.com/Client/Holdings&quot;"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="SERVICE_LOCATOR_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="TABLE" name="SERVICE_ACTIVITY_MONITOR_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_CHUNKED_ENCODING" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_TIMEOUT" value="30"/>
+    <elementParameter field="LABEL" name="CONNECTION_TIMEOUT_DESC" value="(Studio Only, See Doc for Runtime)"/>
+    <elementParameter field="TEXT" name="RECEIVE_TIMEOUT" value="60"/>
+    <elementParameter field="LABEL" name="RECEIVE_TIMEOUT_DESC" value="(Studio Only, See Doc for Runtime)"/>
+    <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" value="&quot;61.163.92.4&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" value="8080" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" value="enc:system.encryption.key.v1:+AHd4nD4g+LqFxVbKT0ncEM9AZ/Ry3gvs0SZukWe" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRESTClient_1">
+      <column comment="" key="false" length="-1" name="useruniquecode_c" nullable="true" pattern="" precision="-1" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="string" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="RESPONSE" name="RESPONSE">
+      <column defaultValue="" key="false" length="0" name="statusCode" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="4048" name="string" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FAULT" name="FAULT">
+      <column defaultValue="" key="false" length="0" name="errorCode" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="1024" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="736" posY="448">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_2" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="bad_request" name="bad_request">
+      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees name="row2" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+        <nodes name="errorCode" type="id_Integer" outgoingConnections="//@node.8/@nodeData/@connections.0" xpath="row2/errorCode"/>
+        <nodes name="errorMessage" type="id_String" outgoingConnections="//@node.8/@nodeData/@connections.1" xpath="row2/errorMessage"/>
+      </inputTrees>
+      <outputTrees name="bad_request">
+        <nodes name="body" expression="" type="id_Document" xpath="bad_request/body" pattern="">
+          <children xsi:type="TalendXMLMap:OutputTreeNode" name="root" expression="" type="id_String" xpath="bad_request.body:/root" loop="true" main="true" optional="true">
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="errorCode" expression="row2.errorCode" type="id_Integer" incomingConnections="//@node.8/@nodeData/@connections.0" xpath="bad_request.body:/root/errorCode"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="errorMessage" expression="row2.errorMessage" type="id_String" incomingConnections="//@node.8/@nodeData/@connections.1" xpath="bad_request.body:/root/errorMessage"/>
+          </children>
+        </nodes>
+      </outputTrees>
+      <varTables name="Var" minimized="true"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.8/@nodeData/@inputTrees.0/@nodes.0" target="//@node.8/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.8/@nodeData/@inputTrees.0/@nodes.1" target="//@node.8/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1"/>
+    </nodeData>
+  </node>
+  <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="928" posY="448">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTResponse_1" show="false"/>
+    <elementParameter field="REST_RESPONSE_SCHEMA_TYPE" name="RESPONSE_TYPE" value="id_Document"/>
+    <elementParameter field="CLOSED_LIST" name="STATUS_CODE" value="200"/>
+    <elementParameter field="TEXT" name="CUSTOM_STATUS_CODE" value="200" show="false"/>
+    <elementParameter field="TABLE" name="RESPONSE_HEADERS"/>
+    <elementParameter field="CHECK" name="UNWRAP_JSON_RESPONSE" value="false"/>
+    <elementParameter field="TEXT" name="JSON_ARRAY_KEYS" value=""/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRESTResponse_1">
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="736" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="holdings" name="holdings">
+      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="string" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees name="row1" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+        <nodes name="statusCode" type="id_Integer" xpath="row1/statusCode"/>
+        <nodes name="body" expression="" type="id_Document" xpath="row1/body">
+          <children name="root" expression="" type="id_String" xpath="row1.body:/root" main="true">
+            <children name="root" expression="" type="id_String" xpath="row1.body:/root/root" loop="true" main="true">
+              <children name="ClientCode" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.1" xpath="row1.body:/root/root/ClientCode"/>
+              <children name="SchemeName" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.2" xpath="row1.body:/root/root/SchemeName"/>
+              <children name="Folio" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.3" xpath="row1.body:/root/root/Folio"/>
+              <children name="Quantity" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.4" xpath="row1.body:/root/root/Quantity"/>
+              <children name="ValueOfCost" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.5" xpath="row1.body:/root/root/ValueOfCost"/>
+              <children name="CurrentPrice" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.6" xpath="row1.body:/root/root/CurrentPrice"/>
+              <children name="MarketValue" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.7" xpath="row1.body:/root/root/MarketValue"/>
+              <children name="Dividend" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.8" xpath="row1.body:/root/root/Dividend"/>
+              <children name="GainLossPercentage" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.9" xpath="row1.body:/root/root/GainLossPercentage"/>
+              <children name="NetGain" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.10" xpath="row1.body:/root/root/NetGain"/>
+              <children name="CommonScripCode" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.11" xpath="row1.body:/root/root/CommonScripCode"/>
+              <children name="ClientName" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.12" xpath="row1.body:/root/root/ClientName"/>
+              <children name="AverageCost" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.13" xpath="row1.body:/root/root/AverageCost"/>
+              <children name="MarketValue1" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.14" xpath="row1.body:/root/root/MarketValue1"/>
+              <children name="SortOrder" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.15" xpath="row1.body:/root/root/SortOrder"/>
+              <children name="IncludeAmount" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.16" xpath="row1.body:/root/root/IncludeAmount"/>
+              <children name="DataSource" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.17" xpath="row1.body:/root/root/DataSource"/>
+              <children name="Title" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.18" xpath="row1.body:/root/root/Title"/>
+              <children name="Source" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.19" xpath="row1.body:/root/root/Source"/>
+              <children name="BenchmarkXirr" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.20" xpath="row1.body:/root/root/BenchmarkXirr"/>
+              <children name="CurrencyName" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.21" xpath="row1.body:/root/root/CurrencyName"/>
+              <children name="FolioNumber" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.22" xpath="row1.body:/root/root/FolioNumber"/>
+              <children name="InceptionDate" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.23" xpath="row1.body:/root/root/InceptionDate"/>
+              <children name="PortfolioWeight" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.24" xpath="row1.body:/root/root/PortfolioWeight"/>
+              <children name="XirrAsset" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.25" xpath="row1.body:/root/root/XirrAsset"/>
+              <children name="BenchmarkXirrAsset" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.26" xpath="row1.body:/root/root/BenchmarkXirrAsset"/>
+              <children name="L4Client_Code" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.27" xpath="row1.body:/root/root/L4Client_Code"/>
+              <children name="FundOption" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.28" xpath="row1.body:/root/root/FundOption"/>
+              <children name="FundRiskRating" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.29" xpath="row1.body:/root/root/FundRiskRating"/>
+              <children name="SipStartDates" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.30" xpath="row1.body:/root/root/SipStartDates"/>
+              <children name="AssetClassCode" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.31" xpath="row1.body:/root/root/AssetClassCode"/>
+              <children name="AssetClassName" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.32" xpath="row1.body:/root/root/AssetClassName"/>
+              <children name="IsDividend" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.33" xpath="row1.body:/root/root/IsDividend"/>
+              <children name="DividendOption" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.34" xpath="row1.body:/root/root/DividendOption"/>
+              <children name="ValueResearchRating" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.35" xpath="row1.body:/root/root/ValueResearchRating"/>
+              <children name="MinInvAmount" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.36" xpath="row1.body:/root/root/MinInvAmount"/>
+              <children name="MinSWPUnit" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.37" xpath="row1.body:/root/root/MinSWPUnit"/>
+              <children name="MinRedeemUnit" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.38" xpath="row1.body:/root/root/MinRedeemUnit"/>
+              <children name="CurrentFundValue" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.39" xpath="row1.body:/root/root/CurrentFundValue"/>
+              <children name="AwaitingHoldingUnit" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.40" xpath="row1.body:/root/root/AwaitingHoldingUnit"/>
+              <children name="AwaitingHoldingFundValue" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.41" xpath="row1.body:/root/root/AwaitingHoldingFundValue"/>
+              <children name="ExistingAmount" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.42" xpath="row1.body:/root/root/ExistingAmount"/>
+              <children name="ExistingUnits" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.43" xpath="row1.body:/root/root/ExistingUnits"/>
+              <children name="CurrentUnits" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.44" xpath="row1.body:/root/root/CurrentUnits"/>
+              <children name="SwitchOutAllowed" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.45" xpath="row1.body:/root/root/SwitchOutAllowed"/>
+              <children name="SIPAggrAmt" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.46" xpath="row1.body:/root/root/SIPAggrAmt"/>
+              <children name="SIPAllowed" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.47" xpath="row1.body:/root/root/SIPAllowed"/>
+              <children name="REDEEMAllowed" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.48" xpath="row1.body:/root/root/REDEEMAllowed"/>
+              <children name="SWPAllowed" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.49" xpath="row1.body:/root/root/SWPAllowed"/>
+              <children name="CostofInvestment" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.50" xpath="row1.body:/root/root/CostofInvestment"/>
+              <children name="Classification" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.51" xpath="row1.body:/root/root/Classification"/>
+              <children name="Issuer" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.52" xpath="row1.body:/root/root/Issuer"/>
+              <children name="SchemeCode" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.53" xpath="row1.body:/root/root/SchemeCode"/>
+              <children name="ELSSLocking" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.54" xpath="row1.body:/root/root/ELSSLocking"/>
+              <children name="IIN" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.55" xpath="row1.body:/root/root/IIN"/>
+              <children name="scripxirr_Client" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.56" xpath="row1.body:/root/root/scripxirr_Client"/>
+              <children name="indexscripxirr_Client" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.57" xpath="row1.body:/root/root/indexscripxirr_Client"/>
+              <children name="ISIN" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.58" xpath="row1.body:/root/root/ISIN"/>
+              <children name="AMFICode" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.59" xpath="row1.body:/root/root/AMFICode"/>
+              <children name="SecurityCurrencyCode" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.60" xpath="row1.body:/root/root/SecurityCurrencyCode"/>
+              <children name="MaturityDate" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.61" xpath="row1.body:/root/root/MaturityDate"/>
+            </children>
+          </children>
+        </nodes>
+        <nodes name="string" type="id_String" xpath="row1/string"/>
+      </inputTrees>
+      <outputTrees name="holdings" allInOne="true">
+        <nodes name="body" expression="" type="id_Document" xpath="holdings/body" pattern="">
+          <children xsi:type="TalendXMLMap:OutputTreeNode" name="root" expression="" type="id_String" xpath="holdings.body:/root" main="true">
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="holdings" expression="" type="id_String" xpath="holdings.body:/root/holdings" loop="true" main="true">
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="ClientProfileID" expression="Var.ClientProfileID" incomingConnections="//@node.10/@nodeData/@connections.0" xpath="holdings.body:/root/holdings/ClientProfileID"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="UserUniqueCode" expression="context.useruniquecode" xpath="holdings.body:/root/holdings/UserUniqueCode"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="ClientCode" expression="[row1.body:/root/root/ClientCode]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.1" xpath="holdings.body:/root/holdings/ClientCode"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="SchemeName" expression="[row1.body:/root/root/SchemeName]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.2" xpath="holdings.body:/root/holdings/SchemeName"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="Folio" expression="[row1.body:/root/root/Folio]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.3" xpath="holdings.body:/root/holdings/Folio"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="Quantity" expression="[row1.body:/root/root/Quantity]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.4" xpath="holdings.body:/root/holdings/Quantity"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="ValueOfCost" expression="[row1.body:/root/root/ValueOfCost]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.5" xpath="holdings.body:/root/holdings/ValueOfCost"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="CurrentPrice" expression="[row1.body:/root/root/CurrentPrice]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.6" xpath="holdings.body:/root/holdings/CurrentPrice"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="MarketValue" expression="[row1.body:/root/root/MarketValue]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.7" xpath="holdings.body:/root/holdings/MarketValue"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="Dividend" expression="[row1.body:/root/root/Dividend]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.8" xpath="holdings.body:/root/holdings/Dividend"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="GainLossPercentage" expression="[row1.body:/root/root/GainLossPercentage]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.9" xpath="holdings.body:/root/holdings/GainLossPercentage"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="NetGain" expression="[row1.body:/root/root/NetGain]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.10" xpath="holdings.body:/root/holdings/NetGain"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="CommonScripCode" expression="[row1.body:/root/root/CommonScripCode]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.11" xpath="holdings.body:/root/holdings/CommonScripCode"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="ClientName" expression="[row1.body:/root/root/ClientName]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.12" xpath="holdings.body:/root/holdings/ClientName"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="AverageCost" expression="[row1.body:/root/root/AverageCost]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.13" xpath="holdings.body:/root/holdings/AverageCost"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="MarketValue1" expression="[row1.body:/root/root/MarketValue1]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.14" xpath="holdings.body:/root/holdings/MarketValue1"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="SortOrder" expression="[row1.body:/root/root/SortOrder]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.15" xpath="holdings.body:/root/holdings/SortOrder"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="IncludeAmount" expression="[row1.body:/root/root/IncludeAmount]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.16" xpath="holdings.body:/root/holdings/IncludeAmount"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="DataSource" expression="[row1.body:/root/root/DataSource]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.17" xpath="holdings.body:/root/holdings/DataSource"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="Title" expression="[row1.body:/root/root/Title]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.18" xpath="holdings.body:/root/holdings/Title"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="Source" expression="[row1.body:/root/root/Source]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.19" xpath="holdings.body:/root/holdings/Source"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="BenchmarkXirr" expression="[row1.body:/root/root/BenchmarkXirr]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.20" xpath="holdings.body:/root/holdings/BenchmarkXirr"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="CurrencyName" expression="[row1.body:/root/root/CurrencyName]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.21" xpath="holdings.body:/root/holdings/CurrencyName"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="FolioNumber" expression="[row1.body:/root/root/FolioNumber]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.22" xpath="holdings.body:/root/holdings/FolioNumber"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="InceptionDate" expression="[row1.body:/root/root/InceptionDate]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.23" xpath="holdings.body:/root/holdings/InceptionDate"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="PortfolioWeight" expression="[row1.body:/root/root/PortfolioWeight]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.24" xpath="holdings.body:/root/holdings/PortfolioWeight"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="XirrAsset" expression="[row1.body:/root/root/XirrAsset]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.25" xpath="holdings.body:/root/holdings/XirrAsset"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="BenchmarkXirrAsset" expression="[row1.body:/root/root/BenchmarkXirrAsset]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.26" xpath="holdings.body:/root/holdings/BenchmarkXirrAsset"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="L4Client_Code" expression="[row1.body:/root/root/L4Client_Code]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.27" xpath="holdings.body:/root/holdings/L4Client_Code"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="FundOption" expression="[row1.body:/root/root/FundOption]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.28" xpath="holdings.body:/root/holdings/FundOption"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="FundRiskRating" expression="[row1.body:/root/root/FundRiskRating]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.29" xpath="holdings.body:/root/holdings/FundRiskRating"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="SipStartDates" expression="[row1.body:/root/root/SipStartDates]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.30" xpath="holdings.body:/root/holdings/SipStartDates"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="AssetClassCode" expression="[row1.body:/root/root/AssetClassCode]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.31" xpath="holdings.body:/root/holdings/AssetClassCode"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="AssetClassName" expression="[row1.body:/root/root/AssetClassName]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.32" xpath="holdings.body:/root/holdings/AssetClassName"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="IsDividend" expression="[row1.body:/root/root/IsDividend]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.33" xpath="holdings.body:/root/holdings/IsDividend"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="DividendOption" expression="[row1.body:/root/root/DividendOption]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.34" xpath="holdings.body:/root/holdings/DividendOption"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="ValueResearchRating" expression="[row1.body:/root/root/ValueResearchRating]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.35" xpath="holdings.body:/root/holdings/ValueResearchRating"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="MinInvAmount" expression="[row1.body:/root/root/MinInvAmount]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.36" xpath="holdings.body:/root/holdings/MinInvAmount"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="MinSWPUnit" expression="[row1.body:/root/root/MinSWPUnit]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.37" xpath="holdings.body:/root/holdings/MinSWPUnit"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="MinRedeemUnit" expression="[row1.body:/root/root/MinRedeemUnit]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.38" xpath="holdings.body:/root/holdings/MinRedeemUnit"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="CurrentFundValue" expression="[row1.body:/root/root/CurrentFundValue]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.39" xpath="holdings.body:/root/holdings/CurrentFundValue"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="AwaitingHoldingUnit" expression="[row1.body:/root/root/AwaitingHoldingUnit]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.40" xpath="holdings.body:/root/holdings/AwaitingHoldingUnit"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="AwaitingHoldingFundValue" expression="[row1.body:/root/root/AwaitingHoldingFundValue]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.41" xpath="holdings.body:/root/holdings/AwaitingHoldingFundValue"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="ExistingAmount" expression="[row1.body:/root/root/ExistingAmount]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.42" xpath="holdings.body:/root/holdings/ExistingAmount"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="ExistingUnits" expression="[row1.body:/root/root/ExistingUnits]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.43" xpath="holdings.body:/root/holdings/ExistingUnits"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="CurrentUnits" expression="[row1.body:/root/root/CurrentUnits]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.44" xpath="holdings.body:/root/holdings/CurrentUnits"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="SwitchOutAllowed" expression="[row1.body:/root/root/SwitchOutAllowed]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.45" xpath="holdings.body:/root/holdings/SwitchOutAllowed"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="SIPAggrAmt" expression="[row1.body:/root/root/SIPAggrAmt]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.46" xpath="holdings.body:/root/holdings/SIPAggrAmt"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="SIPAllowed" expression="[row1.body:/root/root/SIPAllowed]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.47" xpath="holdings.body:/root/holdings/SIPAllowed"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="REDEEMAllowed" expression="[row1.body:/root/root/REDEEMAllowed]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.48" xpath="holdings.body:/root/holdings/REDEEMAllowed"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="SWPAllowed" expression="[row1.body:/root/root/SWPAllowed]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.49" xpath="holdings.body:/root/holdings/SWPAllowed"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="CostofInvestment" expression="[row1.body:/root/root/CostofInvestment]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.50" xpath="holdings.body:/root/holdings/CostofInvestment"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="Classification" expression="[row1.body:/root/root/Classification]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.51" xpath="holdings.body:/root/holdings/Classification"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="Issuer" expression="[row1.body:/root/root/Issuer]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.52" xpath="holdings.body:/root/holdings/Issuer"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="SchemeCode" expression="[row1.body:/root/root/SchemeCode]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.53" xpath="holdings.body:/root/holdings/SchemeCode"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="ELSSLocking" expression="[row1.body:/root/root/ELSSLocking]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.54" xpath="holdings.body:/root/holdings/ELSSLocking"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="IIN" expression="[row1.body:/root/root/IIN]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.55" xpath="holdings.body:/root/holdings/IIN"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="scripxirr_Client" expression="[row1.body:/root/root/scripxirr_Client]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.56" xpath="holdings.body:/root/holdings/scripxirr_Client"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="indexscripxirr_Client" expression="[row1.body:/root/root/indexscripxirr_Client]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.57" xpath="holdings.body:/root/holdings/indexscripxirr_Client"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="ISIN" expression="[row1.body:/root/root/ISIN]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.58" xpath="holdings.body:/root/holdings/ISIN"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="AMFICode" expression="[row1.body:/root/root/AMFICode]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.59" xpath="holdings.body:/root/holdings/AMFICode"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="SecurityCurrencyCode" expression="[row1.body:/root/root/SecurityCurrencyCode]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.60" xpath="holdings.body:/root/holdings/SecurityCurrencyCode"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="MaturityDate" expression="[row1.body:/root/root/MaturityDate]" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.61" xpath="holdings.body:/root/holdings/MaturityDate"/>
+            </children>
+          </children>
+        </nodes>
+        <nodes name="string" expression="" type="id_String" xpath="holdings/string" pattern=""/>
+      </outputTrees>
+      <varTables name="Var">
+        <nodes name="ClientProfileID" expression="java.util.UUID.randomUUID().toString()" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.0"/>
+      </varTables>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@varTables.0/@nodes.0" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.0"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.0" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.2"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.1" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.3"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.2" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.4"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.3" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.5"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.4" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.6"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.5" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.7"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.6" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.8"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.7" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.9"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.8" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.10"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.9" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.11"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.10" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.12"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.11" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.13"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.12" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.14"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.13" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.15"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.14" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.16"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.15" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.17"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.16" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.18"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.17" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.19"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.18" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.20"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.19" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.21"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.20" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.22"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.21" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.23"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.22" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.24"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.23" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.25"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.24" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.26"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.25" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.27"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.26" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.28"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.27" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.29"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.28" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.30"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.29" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.31"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.30" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.32"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.31" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.33"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.32" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.34"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.33" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.35"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.34" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.36"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.35" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.37"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.36" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.38"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.37" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.39"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.38" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.40"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.39" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.41"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.40" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.42"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.41" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.43"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.42" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.44"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.43" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.45"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.44" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.46"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.45" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.47"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.46" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.48"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.47" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.49"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.48" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.50"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.49" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.51"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.50" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.52"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.51" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.53"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.52" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.54"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.53" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.55"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.54" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.56"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.55" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.57"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.56" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.58"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.57" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.59"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.58" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.60"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.59" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.61"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.60" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.62"/>
+    </nodeData>
+  </node>
+  <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="928" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTResponse_2" show="false"/>
+    <elementParameter field="REST_RESPONSE_SCHEMA_TYPE" name="RESPONSE_TYPE" value="id_Document"/>
+    <elementParameter field="CLOSED_LIST" name="STATUS_CODE" value="200"/>
+    <elementParameter field="TEXT" name="CUSTOM_STATUS_CODE" value="200" show="false"/>
+    <elementParameter field="TABLE" name="RESPONSE_HEADERS"/>
+    <elementParameter field="CHECK" name="UNWRAP_JSON_RESPONSE" value="false"/>
+    <elementParameter field="TEXT" name="JSON_ARRAY_KEYS" value=""/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRESTResponse_2">
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBConnection_1" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_1" target="tRESTRequest_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="ClientHoldings" lineStyle="0" metaname="ClientHoldings" offsetLabelX="0" offsetLabelY="0" source="tRESTRequest_1" target="tXMLMap_3">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="UserCode"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="ClientHoldings" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRESTRequest_1" offsetLabelX="0" offsetLabelY="0" source="tRESTRequest_1" target="tDBInput_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="client" lineStyle="0" metaname="client" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_3" target="tSetGlobalVar_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="client" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tJavaRow_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBInput_1" offsetLabelX="50" offsetLabelY="-50" source="tDBInput_1" target="tJava_1">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tJavaRow_2" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_2" target="tRESTClient_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
+  </connection>
+  <connection connectorName="RESPONSE" label="row1" lineStyle="0" metaname="RESPONSE" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tRESTClient_1" target="tXMLMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="FAULT" label="row2" lineStyle="0" metaname="FAULT" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tRESTClient_1" target="tXMLMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="bad_request" lineStyle="0" metaname="bad_request" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_2" target="tRESTResponse_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="bad_request" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="holdings" lineStyle="0" metaname="holdings" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="tRESTResponse_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="holdings" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBConnection_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTRequest_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

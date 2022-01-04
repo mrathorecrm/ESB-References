@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_g6qIcFmlEeyZm5Ho-QWJtQ" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_g6qIcVmlEeyZm5Ho-QWJtQ" comment="" name="BajajCRMDB_Password" prompt="BajajCRMDB_Password?" promptNeeded="false" repositoryContextId="_8coe4IJNEeugGc4-oYp_vg" type="id_Password" value="enc:system.encryption.key.v1:26ddnD/MDEuExajuHpLvg2YcA11ABF3waNdCfXf1Yux6UyzeslUHHg=="/>
+    <contextParameter xmi:id="_g6qIclmlEeyZm5Ho-QWJtQ" comment="" name="BajajCRMDB_Database" prompt="BajajCRMDB_Database?" promptNeeded="false" type="id_String" value="crmdevdb"/>
+    <contextParameter xmi:id="_g6qIc1mlEeyZm5Ho-QWJtQ" comment="" name="BajajCRMDB_Login" prompt="BajajCRMDB_Login?" promptNeeded="false" type="id_String" value="Talenddbuser"/>
+    <contextParameter xmi:id="_g6qIdFmlEeyZm5Ho-QWJtQ" comment="" name="BajajCRMDB_AdditionalParams" prompt="BajajCRMDB_AdditionalParams?" promptNeeded="false" type="id_String" value="noDatetimeStringSync=true"/>
+    <contextParameter xmi:id="_g6qIdVmlEeyZm5Ho-QWJtQ" comment="" name="BajajCRMDB_Server" prompt="BajajCRMDB_Server?" promptNeeded="false" type="id_String" value="172.30.6.76"/>
+    <contextParameter xmi:id="_g6qIdlmlEeyZm5Ho-QWJtQ" comment="" name="BajajCRMDB_Port" prompt="BajajCRMDB_Port?" promptNeeded="false" type="id_String" value="3306"/>
+    <contextParameter xmi:id="_g6qId1mlEeyZm5Ho-QWJtQ" comment="" name="BajajWMDB_Password" prompt="BajajWMDB_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:msu0Fa3YnZkMa9PGjJlq+NahYsdRQH13cb/N/8CRbJxBN+3cj3++tNApKw=="/>
+    <contextParameter xmi:id="_g6qIeFmlEeyZm5Ho-QWJtQ" comment="" name="BajajWMDB_Schema" prompt="BajajWMDB_Schema?" promptNeeded="false" type="id_String" value="WEALTHMAKER"/>
+    <contextParameter xmi:id="_g6qIeVmlEeyZm5Ho-QWJtQ" comment="" name="BajajWMDB_Login" prompt="BajajWMDB_Login?" promptNeeded="false" type="id_String" value="simplecrm"/>
+    <contextParameter xmi:id="_g6qIelmlEeyZm5Ho-QWJtQ" comment="" name="BajajWMDB_AdditionalParams" prompt="BajajWMDB_AdditionalParams?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_g6qIe1mlEeyZm5Ho-QWJtQ" comment="" name="BajajWMDB_Server" prompt="BajajWMDB_Server?" promptNeeded="false" type="id_String" value="132.0.0.21"/>
+    <contextParameter xmi:id="_g6qIfFmlEeyZm5Ho-QWJtQ" comment="" name="BajajWMDB_Port" prompt="BajajWMDB_Port?" promptNeeded="false" type="id_String" value="1521"/>
+    <contextParameter xmi:id="_g6qIfVmlEeyZm5Ho-QWJtQ" comment="" name="BajajWMDB_ServiceName" prompt="BajajWMDB_ServiceName?" promptNeeded="false" type="id_String" value="orcluat"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_g6qIflmlEeyZm5Ho-QWJtQ" confirmationNeeded="false" name="UATDB">
+    <contextParameter xmi:id="_g6qIf1mlEeyZm5Ho-QWJtQ" comment="" name="BajajCRMDB_Password" prompt="BajajCRMDB_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:Ve/NCC2grTJPz5tIeEb1tFVMAt/vRx/E4XF5c9Eyd1AkCwiE5Gq8tw=="/>
+    <contextParameter xmi:id="_g6qIgFmlEeyZm5Ho-QWJtQ" comment="" name="BajajCRMDB_Database" prompt="BajajCRMDB_Database?" promptNeeded="false" type="id_String" value="crmuatdb"/>
+    <contextParameter xmi:id="_g6qIgVmlEeyZm5Ho-QWJtQ" comment="" name="BajajCRMDB_Login" prompt="BajajCRMDB_Login?" promptNeeded="false" type="id_String" value="Talenddbuser"/>
+    <contextParameter xmi:id="_g6qIglmlEeyZm5Ho-QWJtQ" comment="" name="BajajCRMDB_AdditionalParams" prompt="BajajCRMDB_AdditionalParams?" promptNeeded="false" type="id_String" value="noDatetimeStringSync=true"/>
+    <contextParameter xmi:id="_g6qIg1mlEeyZm5Ho-QWJtQ" comment="" name="BajajCRMDB_Server" prompt="BajajCRMDB_Server?" promptNeeded="false" type="id_String" value="uat-crm-db.cekqufamdimo.ap-south-1.rds.amazonaws.com"/>
+    <contextParameter xmi:id="_g6qIhFmlEeyZm5Ho-QWJtQ" comment="" name="BajajCRMDB_Port" prompt="BajajCRMDB_Port?" promptNeeded="false" type="id_String" value="3306"/>
+    <contextParameter xmi:id="_g6qIhVmlEeyZm5Ho-QWJtQ" comment="" name="BajajWMDB_Password" prompt="BajajWMDB_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:79Oo55L1xYjkZR/vF7zeRe1wTQF0KKoXUsQqTE+xxOXWU9G+n/Y8E6ostA=="/>
+    <contextParameter xmi:id="_g6qIhlmlEeyZm5Ho-QWJtQ" comment="" name="BajajWMDB_Schema" prompt="BajajWMDB_Schema?" promptNeeded="false" type="id_String" value="WEALTHMAKER"/>
+    <contextParameter xmi:id="_g6qIh1mlEeyZm5Ho-QWJtQ" comment="" name="BajajWMDB_Login" prompt="BajajWMDB_Login?" promptNeeded="false" type="id_String" value="simplecrm"/>
+    <contextParameter xmi:id="_g6qIiFmlEeyZm5Ho-QWJtQ" comment="" name="BajajWMDB_AdditionalParams" prompt="BajajWMDB_AdditionalParams?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_g6qIiVmlEeyZm5Ho-QWJtQ" comment="" name="BajajWMDB_Server" prompt="BajajWMDB_Server?" promptNeeded="false" type="id_String" value="132.0.0.21"/>
+    <contextParameter xmi:id="_g6qIilmlEeyZm5Ho-QWJtQ" comment="" name="BajajWMDB_Port" prompt="BajajWMDB_Port?" promptNeeded="false" type="id_String" value="1521"/>
+    <contextParameter xmi:id="_g6qIi1mlEeyZm5Ho-QWJtQ" comment="" name="BajajWMDB_ServiceName" prompt="BajajWMDB_ServiceName?" promptNeeded="false" type="id_String" value="orcluat"/>
+  </talendfile:ContextType>
+</xmi:XMI>
