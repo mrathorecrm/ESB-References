@@ -30,14 +30,22 @@ public class AES256 {
 
 	  private static int CIPHER_KEY_LEN = 32; //256 bits
 
-	  /**
-	   * Encrypt data using AES Cipher (CBC) with 256 bit key
-	   *
-	   * @param key  - key to use should be 32 bytes long (256 bits)
-	   * @param iv   - initialization vector
-	   * @param data - data to encrypt
-	   * @return encryptedData data in base64 encoding with iv attached at end after a :
-	   */
+	    /**
+	     * AES256.encrypt: Encrypt data using AES Cipher (CBC) with 256 bit key
+	     * 
+	     * 
+	     * {talendTypes} String
+	     * 
+	     * {Category} User Defined
+	     * 
+	     * {param} string("key") input: key to use should be 32 bytes long (256 bits)
+	     * 
+	     * {param} string("iv") input: initialization vector
+	     * 
+	     * {param} string("data") input: data to encrypt
+	     * 
+	     * {example} encrypt(context.aeskey, context.aesiv, input_row.json) # encryptedData data in base64 encoding with iv attached at end after a :
+	     */
 	  public static String encrypt(String key, String iv, String data) {
 
 	    try {
@@ -76,14 +84,20 @@ public class AES256 {
 	    return key;
 	  }
 
-	  /**
-	   * Decrypt data using AES Cipher (CBC) with 256 bit key
-	   *
-	   * @param key  - key to use should be 32 bytes long (256 bits)
-	   * @param data - encrypted data with iv at the end separate by :
-	   * @return decrypted data string
-	   */
-
+	    /**
+	     * AES256.decrypt: Decrypt data using AES Cipher (CBC) with 256 bit key
+	     * 
+	     * 
+	     * {talendTypes} String
+	     * 
+	     * {Category} User Defined
+	     * 
+	     * {param} string("key") input: key to use should be 32 bytes long (256 bits)
+	     * 
+	     * {param} string("data") input: encrypted data with iv at the end separate by :
+	     * 
+	     * {example} AES256.decrypt(context.aeskey, result) # decrypted data string
+	     */
 	  public static String decrypt(String key, String data) {
 
 	    try {

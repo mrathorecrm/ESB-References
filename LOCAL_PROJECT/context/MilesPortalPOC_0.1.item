@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_3J73cGSwEeyXd7Kerrt_4g" confirmationNeeded="false" name="Default">
-  <contextParameter xmi:id="_3J73cWSwEeyXd7Kerrt_4g" comment="" name="milesportal" prompt="milesportal?" promptNeeded="false" type="id_String" value="D:\Talend_ESB_resources\properties"/>
+  <contextParameter xmi:id="_3J73cWSwEeyXd7Kerrt_4g" comment="" name="milesportal" prompt="milesportal?" promptNeeded="false" type="id_String" value="E:\Milessoft Portal\ESB-Jobs\properties"/>
   <contextParameter xmi:id="_3J73cmSwEeyXd7Kerrt_4g" comment="" name="aeskey" prompt="aeskey?" promptNeeded="false" type="id_String" value=""/>
   <contextParameter xmi:id="_42WV8GSwEeyXd7Kerrt_4g" comment="" name="aesiv" prompt="aesiv?" promptNeeded="false" type="id_String" value=""/>
   <contextParameter xmi:id="__kBc8GSyEeyXd7Kerrt_4g" comment="" name="userType" prompt="userType?" promptNeeded="false" type="id_String" value=""/>

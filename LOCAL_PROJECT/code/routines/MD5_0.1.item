@@ -24,6 +24,18 @@ import java.security.NoSuchAlgorithmException;
  */
 public class MD5 {
 
+    /**
+     * getMd5: MD5 in Java Compatible With PHP md5() Function
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("input") input: The string need to be encrypted.
+     * 
+     * {example} md5('userType2_193_193') # afbcfdb13e3905fe85f4d976596fed77.
+     */
 	public static String getMd5(String input)
 	{
 		try {

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:TalendXMLMap="http://www.talend.org/xmlmap" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
   <context confirmationNeeded="false" name="Default">
-    <contextParameter comment="" name="milesportal" prompt="milesportal?" promptNeeded="false" repositoryContextId="_3JoVcGSwEeyXd7Kerrt_4g" type="id_String" value="D:\Talend_ESB_resources\properties"/>
+    <contextParameter comment="" name="milesportal" prompt="milesportal?" promptNeeded="false" repositoryContextId="_3JoVcGSwEeyXd7Kerrt_4g" type="id_String" value="E:\Milessoft Portal\ESB-Jobs\properties"/>
     <contextParameter comment="" name="dataencrpt" prompt="dataencrpt?" promptNeeded="false" repositoryContextId="_3JoVcGSwEeyXd7Kerrt_4g" type="id_String" value=""/>
     <contextParameter comment="" name="headerhost" prompt="headerhost?" promptNeeded="false" repositoryContextId="_3JoVcGSwEeyXd7Kerrt_4g" type="id_String" value=""/>
     <contextParameter comment="" name="tpa" prompt="tpa?" promptNeeded="false" repositoryContextId="_3JoVcGSwEeyXd7Kerrt_4g" type="id_String" value=""/>
@@ -47,7 +47,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:x6z+2ytfXzQV2AlWqwPKa18t/4BFhfMCX8OrasaP" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:mDPufkWuq4Y58XRSOwWJZPGQpIN5jK8OVU+E+WAx" show="false"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
@@ -82,7 +82,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:tjBADpEM7v0Vf2xfsFmXoAsiHayCZ8xFU4FLcpOq" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:qjnYnH0VmBs1juA28QJcmQu1r3aGmNXl79NTlHMu" show="false"/>
     <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
@@ -201,7 +201,7 @@
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_FEmLUFQlEeyyru83mrQghw-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_sUL4oGyBEey7ScWV5nNDAA-tMap_1-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
     <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>

@@ -24,6 +24,20 @@ import java.text.ParseException;
  */
 public class validateJavaDate {
 
+    /**
+     * validateJavaDate: validate Date and return with expected format
+     * 
+     * 
+     * {talendTypes} Date
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("strDate") input: The string need to be printed.
+     * 
+     * {param} string("format") input: The string need to be printed.
+     * 
+     * {example} validateJavaDate(new Date(), "yyyy-MM-dd HH:mm:ss") # "2022-01-04 19:11:45".
+     */
 	public static Date validateJavaDate(String strDate, String format)
 	{
 	    /* Check if date is 'null' */

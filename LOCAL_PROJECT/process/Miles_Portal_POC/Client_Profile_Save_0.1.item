@@ -3,7 +3,7 @@
   <context confirmationNeeded="false" name="Default">
     <contextParameter comment="" name="aesiv" prompt="aesiv?" promptNeeded="false" repositoryContextId="_3JoVcGSwEeyXd7Kerrt_4g" type="id_String" value=""/>
     <contextParameter comment="" name="aeskey" prompt="aeskey?" promptNeeded="false" repositoryContextId="_3JoVcGSwEeyXd7Kerrt_4g" type="id_String" value=""/>
-    <contextParameter comment="" name="milesportal" prompt="milesportal?" promptNeeded="false" repositoryContextId="_3JoVcGSwEeyXd7Kerrt_4g" type="id_String" value="D:\Talend_ESB_resources\properties"/>
+    <contextParameter comment="" name="milesportal" prompt="milesportal?" promptNeeded="false" repositoryContextId="_3JoVcGSwEeyXd7Kerrt_4g" type="id_String" value="E:\Milessoft Portal\ESB-Jobs\properties"/>
     <contextParameter comment="" name="userType" prompt="userType?" promptNeeded="false" repositoryContextId="_3JoVcGSwEeyXd7Kerrt_4g" type="id_String" value=""/>
   </context>
   <parameters>
@@ -47,7 +47,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:rmnjxaUoQRzWQRujshn011qVvyIPzc7pjPy7ygrb" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:YSqey2orZ79oqxmTIF2OdsmS6yZ2MGjORII51B1V" show="false"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
@@ -82,7 +82,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:U5WNSeoxMn+v4qaqpPrv16oH1VwUrv4DkRaZ3viL" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:sppXYyZHvNg7sB2YFZZcphBUdSyNsGDLNa6dxYNN" show="false"/>
     <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
@@ -265,7 +265,7 @@
     <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" value="BASIC" show="false"/>
     <elementParameter field="TEXT" name="AUTH_USERNAME" value="&quot;username&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="enc:system.encryption.key.v1:+C1AjSeR9JRv0VX5PbMTE/Z+CeH6FYIN66u2LnoXeBECVcqXcoc=" show="false"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="enc:system.encryption.key.v1:Bfpoo3dsiRrqasnkoIEmDGiK4WL0DpyE2/hFJxbncnqdqL0z4cA=" show="false"/>
     <elementParameter field="TEXT" name="AUTH_BEARER_TOKEN" value="&quot;&quot;" show="false"/>
     <elementParameter field="CHECK" name="NEED_AUTHORIZATION" value="false" show="false"/>
     <elementParameter field="TEXT" name="ROLE" value="&quot;&quot;" show="false"/>
@@ -296,7 +296,7 @@
     <elementParameter field="TEXT" name="PROXY_HOST" value="&quot;61.163.92.4&quot;" show="false"/>
     <elementParameter field="TEXT" name="PROXY_PORT" value="8080" show="false"/>
     <elementParameter field="TEXT" name="PROXY_USERNAME" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" value="enc:system.encryption.key.v1:+p9rEsvRlp2d68xmeoi8nUZYmmcfy19hKW715HKm" show="false"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" value="enc:system.encryption.key.v1:ApT1U70O6KzMhmlULCPlW23UOro3EtlspezAfEAY" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="client_data" name="tRESTClient_1">
       <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
@@ -1088,7 +1088,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:aD7LsNjrFnHhjeEUDY8Z27hzPVYJ1TPKGn4IUIMq" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:hXe5MQO9JxLPCoNGUCeRrXpCrgVu2WPsvwaOEcxm" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;miles_clientprofile&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -1186,7 +1186,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:iJdJJsK4DShpTQMK59J5T4oMzAXjbZFjLnVrHW0j" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:+AnVR/8XaHg5jIe22K2nyWQkkpL441n+W6pbz5RB" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;miles_clientprofile_miles_familymember_c&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -1263,7 +1263,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:hDytJaUlFzKj3x/p9BvCOApbCD82xOa4qdr0Hkw7" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:rWDmPew9EriLJ6qEL1O9LVj0/rDxBA+xf3PtrrV/" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;miles_bankaccount_cstm&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -1340,7 +1340,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:JAigT3pYXbj7OWx/58vsnFsN5Peox95au8ZUNyt7" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:BrAucz/SlJ35PFbEeHSODXRImRDzH/Yc41JrMidh" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;miles_clientprofile_cstm&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -1746,7 +1746,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:R7Iv9xwI2niTclUHr3EkUzjhHAvkt9fNzzq5WElB" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:z+6ZnDS1wrBfj6jJcOauF6HY50BeN+Xu1fuk48l4" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;miles_familymember&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -1844,7 +1844,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:TY83t0CgpR7Pdy6sQsKAbj3QnvB8QQ8vFcn5Sq06" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ptw2T+QYQScnH+Dd9JZytD2AOiMxmR1KjzAA8Cvb" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;miles_familymember_cstm&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -1928,7 +1928,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:jycRdLvvXerpx9rGumSdHlAUObsojepXukYO1QK+" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:pZOR1dXz3dxUXmKjtkNLnP1vnQWClauOccmPxX0F" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;miles_bankaccount&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -2026,7 +2026,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:7gQHeYO995O86/SyxMwW5kN+kvc8fX+fJgETQrJy" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:siCC/3CGqaVL7hQEJvWqAM/Bz4+0GhBX7+CNzkfK" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;miles_clientprofile_miles_bankaccount_c&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -2103,7 +2103,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:nGCI35OFvWmMgz9HpYoIhUqlxCMujTErMd6+9EcH" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:DNlUqw56PnksE+PKkvXSfwto0PL1eZFt2IyjCmgt" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;miles_demataccount&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -2201,7 +2201,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:TxCdyeo0CQNtThh98ZPnL56A7eFiE5owhYYdRm7K" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:6FtN27/OqhzDOpdVgoK4Ypg4qzdk1WvyWEf/M8me" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;miles_demataccount_cstm&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -2271,7 +2271,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:kvsNDnBotP3eLN9pMVFbqduj9h70uuna37ImIvBK" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:HaXRZoX1Vwe3QXw3xNcm610Hhx2DoTQwz8eNblE+" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;miles_clientprofile_miles_demataccount_c&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -2388,7 +2388,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:V9tvu8mAoBrvhUeSAcXC46k/w1ySB3gCXVnXygF6" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:4ZvtFkwR/vT6lKAoji9qE/a+mdFtnm9cBV6goPY1" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;users&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -2549,7 +2549,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:yXLJUvWPal3u/4DGlsRO7Gqjev57gXfAx7GNuOI5" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:wqPU7MDGybUP8LsQmpLJOl/oJPxhmksrC1qfM0vt" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;users_cstm&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -2612,7 +2612,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:/R8p0MEsP38mdq4aUdjtnD0kf8+1adAvI7V+SrZw" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:waubu+BXiEUzUEldh/WdCin4rYV6dzOcsQ/yV6bW" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;acl_roles_users&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -2689,7 +2689,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;miles&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;MyLogin&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:B9TNdoxGZLPfj6ASF1d2qkfqppnv8R61qeSH8/zAvYKU"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:9je1O7ikXSfFqB4BNGmkXz7lWaDfPuzhNA9HXABURdQ4"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;com.ibm.jsse2.overrideDefaultTLS=true&quot;"/>
