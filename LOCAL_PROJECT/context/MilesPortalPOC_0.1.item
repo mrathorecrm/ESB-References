@@ -1,20 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_3J73cGSwEeyXd7Kerrt_4g" confirmationNeeded="false" name="Default">
-  <contextParameter xmi:id="_3J73cWSwEeyXd7Kerrt_4g" comment="" name="milesportal" prompt="milesportal?" promptNeeded="false" type="id_String" value="E:\Milessoft Portal\ESB-Jobs\properties"/>
-  <contextParameter xmi:id="_3J73cmSwEeyXd7Kerrt_4g" comment="" name="aeskey" prompt="aeskey?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_42WV8GSwEeyXd7Kerrt_4g" comment="" name="aesiv" prompt="aesiv?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="__kBc8GSyEeyXd7Kerrt_4g" comment="" name="userType" prompt="userType?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_Fqo14GSzEeyXd7Kerrt_4g" comment="" name="useruniquecode" prompt="useruniquecode?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_akJbYGSzEeyXd7Kerrt_4g" comment="" name="dataencrpt" prompt="dataencrpt?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_akJbYWSzEeyXd7Kerrt_4g" comment="" name="tpa" prompt="tpa?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_akJbYmSzEeyXd7Kerrt_4g" comment="" name="headerhost" prompt="headerhost?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_CSqDsGbzEeye19DZMO7QgA" comment="" name="smsgupshup_url" prompt="smsgupshup_url?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_CSqDsWbzEeye19DZMO7QgA" comment="" name="sms_method" prompt="sms_method?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_CSqDsmbzEeye19DZMO7QgA" comment="" name="sms_userid" prompt="sms_userid?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_CSqDs2bzEeye19DZMO7QgA" comment="" name="sms_password" prompt="sms_password?" promptNeeded="false" type="id_Password" value=""/>
-  <contextParameter xmi:id="_CSqDtGbzEeye19DZMO7QgA" comment="" name="sms_api_version" prompt="sms_api_version?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_CSqDtWbzEeye19DZMO7QgA" comment="" name="sms_msg_type" prompt="sms_msg_type?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_CSqDtmbzEeye19DZMO7QgA" comment="" name="sms_auth_scheme" prompt="sms_auth_scheme?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_KKsaIGb3Eeye19DZMO7QgA" comment="" name="sms_format" prompt="sms_format?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_wAtasGcQEeye19DZMO7QgA" comment="" name="sms_template" prompt="sms_template?" promptNeeded="false" type="id_String" value=""/>
-</talendfile:ContextType>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_3J73cGSwEeyXd7Kerrt_4g" confirmationNeeded="false" name="Local">
+    <contextParameter xmi:id="_3J73cWSwEeyXd7Kerrt_4g" comment="" name="milesportal" prompt="milesportal?" promptNeeded="false" type="id_String" value="E:\Milessoft Portal\ESB-Jobs\properties"/>
+    <contextParameter xmi:id="_3J73cmSwEeyXd7Kerrt_4g" comment="" name="aeskey" prompt="aeskey?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_42WV8GSwEeyXd7Kerrt_4g" comment="" name="aesiv" prompt="aesiv?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="__kBc8GSyEeyXd7Kerrt_4g" comment="" name="userType" prompt="userType?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_Fqo14GSzEeyXd7Kerrt_4g" comment="" name="useruniquecode" prompt="useruniquecode?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_akJbYGSzEeyXd7Kerrt_4g" comment="" name="dataencrpt" prompt="dataencrpt?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_akJbYWSzEeyXd7Kerrt_4g" comment="" name="tpa" prompt="tpa?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_akJbYmSzEeyXd7Kerrt_4g" comment="" name="headerhost" prompt="headerhost?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CSqDsGbzEeye19DZMO7QgA" comment="" name="smsgupshup_url" prompt="smsgupshup_url?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CSqDsWbzEeye19DZMO7QgA" comment="" name="sms_method" prompt="sms_method?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CSqDsmbzEeye19DZMO7QgA" comment="" name="sms_userid" prompt="sms_userid?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CSqDs2bzEeye19DZMO7QgA" comment="" name="sms_password" prompt="sms_password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_CSqDtGbzEeye19DZMO7QgA" comment="" name="sms_api_version" prompt="sms_api_version?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CSqDtWbzEeye19DZMO7QgA" comment="" name="sms_msg_type" prompt="sms_msg_type?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CSqDtmbzEeye19DZMO7QgA" comment="" name="sms_auth_scheme" prompt="sms_auth_scheme?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_KKsaIGb3Eeye19DZMO7QgA" comment="" name="sms_format" prompt="sms_format?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_wAtasGcQEeye19DZMO7QgA" comment="" name="sms_template" prompt="sms_template?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_0l2DIHLfEey7I8XvnkQWXg" comment="" name="generic_api" prompt="generic_api?" promptNeeded="false" type="id_String" value="http://localhost:8040/services/GenericMilesAPI"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="__FXvUHLaEey7I8XvnkQWXg" confirmationNeeded="false" name="Staging">
+    <contextParameter xmi:id="__FXvUXLaEey7I8XvnkQWXg" comment="" name="milesportal" prompt="milesportal?" promptNeeded="false" type="id_String" value="C:\Miles-Portal-POC\properties"/>
+    <contextParameter xmi:id="__FXvUnLaEey7I8XvnkQWXg" comment="" name="aeskey" prompt="aeskey?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="__FXvU3LaEey7I8XvnkQWXg" comment="" name="aesiv" prompt="aesiv?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="__FXvVHLaEey7I8XvnkQWXg" comment="" name="userType" prompt="userType?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="__FXvVXLaEey7I8XvnkQWXg" comment="" name="useruniquecode" prompt="useruniquecode?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="__FXvVnLaEey7I8XvnkQWXg" comment="" name="dataencrpt" prompt="dataencrpt?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="__FXvV3LaEey7I8XvnkQWXg" comment="" name="tpa" prompt="tpa?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="__FXvWHLaEey7I8XvnkQWXg" comment="" name="headerhost" prompt="headerhost?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="__FXvWXLaEey7I8XvnkQWXg" comment="" name="smsgupshup_url" prompt="smsgupshup_url?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="__FXvWnLaEey7I8XvnkQWXg" comment="" name="sms_method" prompt="sms_method?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="__FXvW3LaEey7I8XvnkQWXg" comment="" name="sms_userid" prompt="sms_userid?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="__FXvXHLaEey7I8XvnkQWXg" comment="" name="sms_password" prompt="sms_password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="__FXvXXLaEey7I8XvnkQWXg" comment="" name="sms_api_version" prompt="sms_api_version?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="__FXvXnLaEey7I8XvnkQWXg" comment="" name="sms_msg_type" prompt="sms_msg_type?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="__FXvX3LaEey7I8XvnkQWXg" comment="" name="sms_auth_scheme" prompt="sms_auth_scheme?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="__FXvYHLaEey7I8XvnkQWXg" comment="" name="sms_format" prompt="sms_format?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="__FXvYXLaEey7I8XvnkQWXg" comment="" name="sms_template" prompt="sms_template?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_0l2DIXLfEey7I8XvnkQWXg" comment="" name="generic_api" prompt="generic_api?" promptNeeded="false" type="id_String" value="http://35.178.219.19:8040/services/GenericMilesAPI"/>
+  </talendfile:ContextType>
+</xmi:XMI>

@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendXMLMap="http://www.talend.org/xmlmap" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
-  <context confirmationNeeded="false" name="Default">
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendXMLMap="http://www.talend.org/xmlmap" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Local" jobType="Standard">
+  <context confirmationNeeded="false" name="Local">
+    <contextParameter comment="" name="generic_api" prompt="generic_api?" promptNeeded="false" repositoryContextId="_3JoVcGSwEeyXd7Kerrt_4g" type="id_String" value="http://localhost:8040/services/GenericMilesAPI"/>
+    <contextParameter comment="" name="useruniquecode" prompt="useruniquecode?" promptNeeded="false" repositoryContextId="_3JoVcGSwEeyXd7Kerrt_4g" type="id_String" value=""/>
+  </context>
+  <context confirmationNeeded="false" name="Staging">
+    <contextParameter comment="" name="generic_api" prompt="generic_api?" promptNeeded="false" repositoryContextId="_3JoVcGSwEeyXd7Kerrt_4g" type="id_String" value="http://35.178.219.19:8040/services/GenericMilesAPI"/>
     <contextParameter comment="" name="useruniquecode" prompt="useruniquecode?" promptNeeded="false" repositoryContextId="_3JoVcGSwEeyXd7Kerrt_4g" type="id_String" value=""/>
   </context>
   <parameters>
@@ -44,7 +49,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:mLHzVnKpuVVvDhTayn0vsit8nYwjfxGUdfVKAhWm" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:8jXFFdq8fT+eZVe6dy5VvX2+KpYYXzLyEeoAp5Cp" show="false"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
@@ -79,7 +84,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:m3htdMKv/2C8fbcjlrKUxfaGvOnxKVVbRZr9wzrK" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ZeerENTr3CI5unexscbNXihYxapsVWf60Qyz1eG6" show="false"/>
     <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
@@ -112,7 +117,7 @@
   <node componentName="tRESTRequest" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="-3040" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTRequest_1" show="false"/>
     <elementParameter field="TEXT" name="API_ID" value="" show="false"/>
-    <elementParameter field="TEXT" name="REST_ENDPOINT" value="&quot;http://localhost:8088/&quot;"/>
+    <elementParameter field="TEXT" name="REST_ENDPOINT" value="&quot;/&quot;"/>
     <elementParameter field="TABLE" name="SCHEMAS">
       <elementValue elementRef="SCHEMA" value="ClientHoldings"/>
       <elementValue elementRef="HTTP_VERB" value="POST"/>
@@ -209,12 +214,15 @@
               <children xsi:type="TalendXMLMap:OutputTreeNode" name="ReadUCC" expression="[ClientHoldings.body:/root/RequestBody/ReadUCC]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.15" xpath="client_holdings.body:/root/RequestBody/ReadUCC"/>
               <children xsi:type="TalendXMLMap:OutputTreeNode" name="WithoutXIRR" expression="[ClientHoldings.body:/root/RequestBody/WithoutXIRR]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.16" xpath="client_holdings.body:/root/RequestBody/WithoutXIRR"/>
             </children>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="dataEnc" expression="Var.dataEnc" incomingConnections="//@node.1/@nodeData/@connections.19" xpath="client_holdings.body:/root/dataEnc"/>
           </children>
         </nodes>
         <nodes name="useruniquecode" expression="[ClientHoldings.body:/root/UserUniqueCode]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.18" xpath="client_holdings/useruniquecode" pattern=""/>
         <nodes name="string" expression="ClientHoldings.string" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.17" xpath="client_holdings/string" pattern=""/>
       </outputTrees>
-      <varTables name="Var" minimized="true"/>
+      <varTables name="Var">
+        <nodes name="dataEnc" expression="&quot;m44Ms87tLFPne4sY2E8zjdw0ipeU2Wek6VEJtHD0DxVdHq6UtgrVB+Ds85Y3is5WpoHoXHgh5r+DMt3NIimPJkwSxvOsrzI1XBVdZoT/s2QZMDLIIJW5/puldNeSCVtB7x2FJmbcShoMd5/rSujalbFbYeVANmu58HYoYtQA6YmUPS6RMsEM2fu977hxiXYJcvGwZNVf8XdEB2OCIgdHl2VeY9Z9nPN9h/Ya9OnieR4dcoqQReGji6obpZLe+6nmvh950Ucnbq/B40Bwj9/nJT7e3g9WVL2bTrTSM621/bAyKCSBcf+EzithzXKoCd+J8j4T2YWE/IxjULQs5V2gY1rIVUWUldoS9WcANZms+a19N3xZU8pI/Gb3aR2uUHt5IGK1eMb5+Kc4ZwvGthuGPgQZhp9n+g1WmUVIe47LZaUxIPIh3GAYwOb3oIxoHSFYS5xqy7bJIaA4RHjKxuM+wwrOOYj0Xu551uRwBByNVfYR+I5QhxUdbLNrEKFwYEJGxEjh+hZCnU9AOdaJc4Fa8t4h+4JsQFna8ED9T9bO228Rkz+8ynF2U4bk9dMJgWkq75+5E1Of1/np/LfNfY/HtNBiAkQHMkQl5jeAL5PmKv758WJlDWTogGPbrH9lSo3GsqRgD8U71I+/gm563LYNzvbWKOeEmIpznYalrlcIrQWWl3YfjunxXGhf0q+/G45wDB3jdkCAItphYStTA8JzKODyMqGUKJBMx/zc4MDTeZ239/IC5C2GgefpKyyFXkCB&quot; " type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.19"/>
+      </varTables>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0"/>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1"/>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.2/@children.0" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.0"/>
@@ -234,6 +242,7 @@
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.2/@children.14" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.14"/>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.1" target="//@node.1/@nodeData/@outputTrees.0/@nodes.2"/>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.3" target="//@node.1/@nodeData/@outputTrees.0/@nodes.1"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@varTables.0/@nodes.0" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.3"/>
     </nodeData>
   </node>
   <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="-2752" posY="96">
@@ -249,7 +258,7 @@
   </node>
   <node componentName="tRESTClient" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-2592" posY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTClient_1" show="false"/>
-    <elementParameter field="TEXT" name="URL" value="&quot;http://localhost:8090/GenericMilesAPI&quot;"/>
+    <elementParameter field="TEXT" name="URL" value="context.generic_api"/>
     <elementParameter field="TEXT" name="PATH" value="&quot;&quot;"/>
     <elementParameter field="CLOSED_LIST" name="METHOD" value="POST"/>
     <elementParameter field="CLOSED_LIST" name="CONTENT_TYPE" value="application/json"/>
@@ -262,7 +271,7 @@
     <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" value="BASIC" show="false"/>
     <elementParameter field="TEXT" name="AUTH_USERNAME" value="&quot;username&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="enc:system.encryption.key.v1:h9S8kglI4h63zfHqZYrVfJwow3z/PvxcOgE9/xnPRsLuKga7qhc=" show="false"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="enc:system.encryption.key.v1:gjYJXU3m1+mN7fh5otyQdhx4A6nGRUFa4Qv5c8gvHtR9nUIKvlk=" show="false"/>
     <elementParameter field="TEXT" name="AUTH_BEARER_TOKEN" value="&quot;&quot;" show="false"/>
     <elementParameter field="CHECK" name="NEED_AUTHORIZATION" value="false" show="false"/>
     <elementParameter field="TEXT" name="ROLE" value="&quot;&quot;" show="false"/>
@@ -293,7 +302,7 @@
     <elementParameter field="TEXT" name="PROXY_HOST" value="&quot;61.163.92.4&quot;" show="false"/>
     <elementParameter field="TEXT" name="PROXY_PORT" value="8080" show="false"/>
     <elementParameter field="TEXT" name="PROXY_USERNAME" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" value="enc:system.encryption.key.v1:gn4fsElu3BA2XW7H1okqaOQ6d9tSg8RP3MMUDKkD" show="false"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" value="enc:system.encryption.key.v1:6ePhdPXbI7EsG1diXAL4rUV+9G+p4FsukNNiVx60" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="client_holdings" name="tRESTClient_1">
       <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
@@ -358,10 +367,12 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="holdings" name="holdings">
       <column comment="" key="false" length="-1" name="id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="date_entered" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="date_modified" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="modified_user_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="created_by" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="assigned_user_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="useruniquecode" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="clientcode" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="schemename" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -448,7 +459,7 @@
               <children name="SortOrder" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.17" xpath="row1.body:/root/root/SortOrder"/>
               <children name="IncludeAmount" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.18" xpath="row1.body:/root/root/IncludeAmount"/>
               <children name="DataSource" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.19" xpath="row1.body:/root/root/DataSource"/>
-              <children name="Title" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.20" xpath="row1.body:/root/root/Title"/>
+              <children name="Title" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.20 //@node.6/@nodeData/@connections.64" xpath="row1.body:/root/root/Title"/>
               <children name="Source" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.21" xpath="row1.body:/root/root/Source"/>
               <children name="BenchmarkXirr" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.22" xpath="row1.body:/root/root/BenchmarkXirr"/>
               <children name="CurrencyName" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.23" xpath="row1.body:/root/root/CurrencyName"/>
@@ -499,10 +510,12 @@
       </inputTrees>
       <outputTrees name="holdings" allInOne="true">
         <nodes name="id" expression="Var.ClientHoldingsID" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.0" xpath="holdings/id" pattern=""/>
+        <nodes name="name" expression="[row1.body:/root/root/Title]" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.64" xpath="holdings/name" pattern=""/>
         <nodes name="date_entered" expression="Var.CurrentDate" type="id_Date" incomingConnections="//@node.6/@nodeData/@connections.1" xpath="holdings/date_entered" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;"/>
         <nodes name="date_modified" expression="Var.CurrentDate" type="id_Date" incomingConnections="//@node.6/@nodeData/@connections.2" xpath="holdings/date_modified" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;"/>
         <nodes name="modified_user_id" expression="context.useruniquecode" type="id_String" xpath="holdings/modified_user_id" pattern=""/>
         <nodes name="created_by" expression="context.useruniquecode" type="id_String" xpath="holdings/created_by" pattern=""/>
+        <nodes name="assigned_user_id" expression="context.useruniquecode" type="id_String" xpath="holdings/assigned_user_id" pattern=""/>
         <nodes name="useruniquecode" expression="context.useruniquecode" type="id_String" xpath="holdings/useruniquecode" pattern=""/>
         <nodes name="clientcode" expression="[row1.body:/root/root/ClientCode]" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.3" xpath="holdings/clientcode" pattern=""/>
         <nodes name="schemename" expression="[row1.body:/root/root/SchemeName]" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.4" xpath="holdings/schemename"/>
@@ -571,69 +584,70 @@
         <nodes name="CurrentDate" expression="TalendDate.getCurrentDate() " type="id_Date" outgoingConnections="//@node.6/@nodeData/@connections.1 //@node.6/@nodeData/@connections.2"/>
       </varTables>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@varTables.0/@nodes.0" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@varTables.0/@nodes.1" target="//@node.6/@nodeData/@outputTrees.0/@nodes.1"/>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@varTables.0/@nodes.1" target="//@node.6/@nodeData/@outputTrees.0/@nodes.2"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.0" target="//@node.6/@nodeData/@outputTrees.0/@nodes.6"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.1" target="//@node.6/@nodeData/@outputTrees.0/@nodes.7"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.2" target="//@node.6/@nodeData/@outputTrees.0/@nodes.8"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.3" target="//@node.6/@nodeData/@outputTrees.0/@nodes.9"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.4" target="//@node.6/@nodeData/@outputTrees.0/@nodes.10"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.5" target="//@node.6/@nodeData/@outputTrees.0/@nodes.11"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.6" target="//@node.6/@nodeData/@outputTrees.0/@nodes.12"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.7" target="//@node.6/@nodeData/@outputTrees.0/@nodes.13"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.8" target="//@node.6/@nodeData/@outputTrees.0/@nodes.14"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.9" target="//@node.6/@nodeData/@outputTrees.0/@nodes.15"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.10" target="//@node.6/@nodeData/@outputTrees.0/@nodes.16"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.11" target="//@node.6/@nodeData/@outputTrees.0/@nodes.17"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.12" target="//@node.6/@nodeData/@outputTrees.0/@nodes.18"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.13" target="//@node.6/@nodeData/@outputTrees.0/@nodes.19"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.14" target="//@node.6/@nodeData/@outputTrees.0/@nodes.20"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.15" target="//@node.6/@nodeData/@outputTrees.0/@nodes.21"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.16" target="//@node.6/@nodeData/@outputTrees.0/@nodes.22"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.17" target="//@node.6/@nodeData/@outputTrees.0/@nodes.23"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.18" target="//@node.6/@nodeData/@outputTrees.0/@nodes.24"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.19" target="//@node.6/@nodeData/@outputTrees.0/@nodes.25"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.20" target="//@node.6/@nodeData/@outputTrees.0/@nodes.26"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.21" target="//@node.6/@nodeData/@outputTrees.0/@nodes.27"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.22" target="//@node.6/@nodeData/@outputTrees.0/@nodes.28"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.23" target="//@node.6/@nodeData/@outputTrees.0/@nodes.29"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.24" target="//@node.6/@nodeData/@outputTrees.0/@nodes.30"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.25" target="//@node.6/@nodeData/@outputTrees.0/@nodes.31"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.26" target="//@node.6/@nodeData/@outputTrees.0/@nodes.32"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.27" target="//@node.6/@nodeData/@outputTrees.0/@nodes.33"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.28" target="//@node.6/@nodeData/@outputTrees.0/@nodes.34"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.29" target="//@node.6/@nodeData/@outputTrees.0/@nodes.35"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.30" target="//@node.6/@nodeData/@outputTrees.0/@nodes.36"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.31" target="//@node.6/@nodeData/@outputTrees.0/@nodes.37"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.32" target="//@node.6/@nodeData/@outputTrees.0/@nodes.38"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.33" target="//@node.6/@nodeData/@outputTrees.0/@nodes.39"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.34" target="//@node.6/@nodeData/@outputTrees.0/@nodes.40"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.35" target="//@node.6/@nodeData/@outputTrees.0/@nodes.41"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.36" target="//@node.6/@nodeData/@outputTrees.0/@nodes.42"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.37" target="//@node.6/@nodeData/@outputTrees.0/@nodes.43"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.38" target="//@node.6/@nodeData/@outputTrees.0/@nodes.44"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.39" target="//@node.6/@nodeData/@outputTrees.0/@nodes.45"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.40" target="//@node.6/@nodeData/@outputTrees.0/@nodes.46"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.41" target="//@node.6/@nodeData/@outputTrees.0/@nodes.47"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.42" target="//@node.6/@nodeData/@outputTrees.0/@nodes.48"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.43" target="//@node.6/@nodeData/@outputTrees.0/@nodes.49"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.44" target="//@node.6/@nodeData/@outputTrees.0/@nodes.50"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.45" target="//@node.6/@nodeData/@outputTrees.0/@nodes.51"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.46" target="//@node.6/@nodeData/@outputTrees.0/@nodes.52"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.47" target="//@node.6/@nodeData/@outputTrees.0/@nodes.53"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.48" target="//@node.6/@nodeData/@outputTrees.0/@nodes.54"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.49" target="//@node.6/@nodeData/@outputTrees.0/@nodes.55"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.50" target="//@node.6/@nodeData/@outputTrees.0/@nodes.56"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.51" target="//@node.6/@nodeData/@outputTrees.0/@nodes.57"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.52" target="//@node.6/@nodeData/@outputTrees.0/@nodes.59"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.53" target="//@node.6/@nodeData/@outputTrees.0/@nodes.60"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.54" target="//@node.6/@nodeData/@outputTrees.0/@nodes.61"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.55" target="//@node.6/@nodeData/@outputTrees.0/@nodes.62"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.56" target="//@node.6/@nodeData/@outputTrees.0/@nodes.63"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.57" target="//@node.6/@nodeData/@outputTrees.0/@nodes.64"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.58" target="//@node.6/@nodeData/@outputTrees.0/@nodes.65"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.59" target="//@node.6/@nodeData/@outputTrees.0/@nodes.66"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.60" target="//@node.6/@nodeData/@outputTrees.0/@nodes.58"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@varTables.0/@nodes.1" target="//@node.6/@nodeData/@outputTrees.0/@nodes.3"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.0" target="//@node.6/@nodeData/@outputTrees.0/@nodes.8"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.1" target="//@node.6/@nodeData/@outputTrees.0/@nodes.9"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.2" target="//@node.6/@nodeData/@outputTrees.0/@nodes.10"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.3" target="//@node.6/@nodeData/@outputTrees.0/@nodes.11"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.4" target="//@node.6/@nodeData/@outputTrees.0/@nodes.12"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.5" target="//@node.6/@nodeData/@outputTrees.0/@nodes.13"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.6" target="//@node.6/@nodeData/@outputTrees.0/@nodes.14"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.7" target="//@node.6/@nodeData/@outputTrees.0/@nodes.15"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.8" target="//@node.6/@nodeData/@outputTrees.0/@nodes.16"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.9" target="//@node.6/@nodeData/@outputTrees.0/@nodes.17"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.10" target="//@node.6/@nodeData/@outputTrees.0/@nodes.18"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.11" target="//@node.6/@nodeData/@outputTrees.0/@nodes.19"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.12" target="//@node.6/@nodeData/@outputTrees.0/@nodes.20"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.13" target="//@node.6/@nodeData/@outputTrees.0/@nodes.21"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.14" target="//@node.6/@nodeData/@outputTrees.0/@nodes.22"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.15" target="//@node.6/@nodeData/@outputTrees.0/@nodes.23"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.16" target="//@node.6/@nodeData/@outputTrees.0/@nodes.24"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.17" target="//@node.6/@nodeData/@outputTrees.0/@nodes.25"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.18" target="//@node.6/@nodeData/@outputTrees.0/@nodes.26"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.19" target="//@node.6/@nodeData/@outputTrees.0/@nodes.27"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.20" target="//@node.6/@nodeData/@outputTrees.0/@nodes.28"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.21" target="//@node.6/@nodeData/@outputTrees.0/@nodes.29"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.22" target="//@node.6/@nodeData/@outputTrees.0/@nodes.30"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.23" target="//@node.6/@nodeData/@outputTrees.0/@nodes.31"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.24" target="//@node.6/@nodeData/@outputTrees.0/@nodes.32"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.25" target="//@node.6/@nodeData/@outputTrees.0/@nodes.33"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.26" target="//@node.6/@nodeData/@outputTrees.0/@nodes.34"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.27" target="//@node.6/@nodeData/@outputTrees.0/@nodes.35"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.28" target="//@node.6/@nodeData/@outputTrees.0/@nodes.36"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.29" target="//@node.6/@nodeData/@outputTrees.0/@nodes.37"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.30" target="//@node.6/@nodeData/@outputTrees.0/@nodes.38"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.31" target="//@node.6/@nodeData/@outputTrees.0/@nodes.39"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.32" target="//@node.6/@nodeData/@outputTrees.0/@nodes.40"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.33" target="//@node.6/@nodeData/@outputTrees.0/@nodes.41"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.34" target="//@node.6/@nodeData/@outputTrees.0/@nodes.42"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.35" target="//@node.6/@nodeData/@outputTrees.0/@nodes.43"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.36" target="//@node.6/@nodeData/@outputTrees.0/@nodes.44"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.37" target="//@node.6/@nodeData/@outputTrees.0/@nodes.45"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.38" target="//@node.6/@nodeData/@outputTrees.0/@nodes.46"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.39" target="//@node.6/@nodeData/@outputTrees.0/@nodes.47"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.40" target="//@node.6/@nodeData/@outputTrees.0/@nodes.48"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.41" target="//@node.6/@nodeData/@outputTrees.0/@nodes.49"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.42" target="//@node.6/@nodeData/@outputTrees.0/@nodes.50"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.43" target="//@node.6/@nodeData/@outputTrees.0/@nodes.51"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.44" target="//@node.6/@nodeData/@outputTrees.0/@nodes.52"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.45" target="//@node.6/@nodeData/@outputTrees.0/@nodes.53"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.46" target="//@node.6/@nodeData/@outputTrees.0/@nodes.54"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.47" target="//@node.6/@nodeData/@outputTrees.0/@nodes.55"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.48" target="//@node.6/@nodeData/@outputTrees.0/@nodes.56"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.49" target="//@node.6/@nodeData/@outputTrees.0/@nodes.57"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.50" target="//@node.6/@nodeData/@outputTrees.0/@nodes.58"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.51" target="//@node.6/@nodeData/@outputTrees.0/@nodes.59"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.52" target="//@node.6/@nodeData/@outputTrees.0/@nodes.61"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.53" target="//@node.6/@nodeData/@outputTrees.0/@nodes.62"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.54" target="//@node.6/@nodeData/@outputTrees.0/@nodes.63"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.55" target="//@node.6/@nodeData/@outputTrees.0/@nodes.64"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.56" target="//@node.6/@nodeData/@outputTrees.0/@nodes.65"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.57" target="//@node.6/@nodeData/@outputTrees.0/@nodes.66"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.58" target="//@node.6/@nodeData/@outputTrees.0/@nodes.67"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.59" target="//@node.6/@nodeData/@outputTrees.0/@nodes.68"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.60" target="//@node.6/@nodeData/@outputTrees.0/@nodes.60"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.17" target="//@node.6/@nodeData/@outputTrees.0/@nodes.1"/>
     </nodeData>
   </node>
   <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-2112" posY="96">
@@ -647,7 +661,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ucLvggwXI3Khn3bxK3iigNfhkK5fK6dljLumbHmZ" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:rHI+knurU9J0Sr/GYDGXUvv4DUkXKkVjy4WLpf4W" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;ch_clientholdings&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -676,6 +690,11 @@
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="name"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="date_entered"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
@@ -692,6 +711,11 @@
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="created_by"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="assigned_user_id"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
@@ -1015,10 +1039,12 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="holdings" name="tDBOutput_1">
       <column comment="" key="false" length="-1" name="id" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="name" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="date_entered" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="date_modified" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="modified_user_id" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="created_by" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="assigned_user_id" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="useruniquecode" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="clientcode" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="schemename" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -1084,10 +1110,12 @@
     </metadata>
     <metadata connector="REJECT" label="holdings" name="REJECT">
       <column comment="" key="false" length="-1" name="id" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="name" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="date_entered" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="date_modified" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="modified_user_id" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="created_by" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="assigned_user_id" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="useruniquecode" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="clientcode" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="schemename" nullable="true" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -1178,7 +1206,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;miles&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;MyLogin&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:bMvHuHj2XpibWrZ0JWWXPXJK0dyci1p7rcs0V9LZo9Nq"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:myFw08Hq9SQNOcDxVPkT0xXAWebA6BwcW9r60O83dmpxXk5CaTB7"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;com.ibm.jsse2.overrideDefaultTLS=true&quot;"/>

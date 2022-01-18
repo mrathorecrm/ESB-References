@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
-  <TalendMetadata:DatabaseConnection xmi:id="_O7O1sFi5EeynwYsAcnhgZQ" name="milesLocalMSSQL" id="_O6vtgFi5EeynwYsAcnhgZQ" label="milesLocalMSSQL" dataPackage="_5rqpMFjPEeyLVPvyaIAvqw" DatabaseType="Microsoft SQL Server" DriverClass="com.microsoft.sqlserver.jdbc.SQLServerDriver" URL="jdbc:sqlserver://DESKTOP-7JLKFQ7:1433;DatabaseName=miles;com.ibm.jsse2.overrideDefaultTLS=true" dbVersionString="MSSQL_PROP" Port="1433" Username="MyLogin" Password="enc:system.encryption.key.v1:KmtXsLoYhG6CtyIBR91P3Jui0gjynjRqfNr35gtL+Q==" ServerName="DESKTOP-7JLKFQ7" DatasourceName="" FileFieldName="" SID="miles" SqlSynthax="" StringQuote="" NullChar="" DbmsId="id_MSSQL" ProductId="SQL_SERVER" AdditionalParams="com.ibm.jsse2.overrideDefaultTLS=true" StandardSQL="true" SQLMode="false" UiSchema="dbo">
+  <TalendMetadata:DatabaseConnection xmi:id="_O7O1sFi5EeynwYsAcnhgZQ" name="milesLocalMSSQL" id="_O6vtgFi5EeynwYsAcnhgZQ" label="milesLocalMSSQL" dataPackage="_zZJGoHK3Eey7I8XvnkQWXg" DatabaseType="Microsoft SQL Server" DriverClass="com.microsoft.sqlserver.jdbc.SQLServerDriver" URL="jdbc:sqlserver://DESKTOP-7JLKFQ7:1433;DatabaseName=miles;com.ibm.jsse2.overrideDefaultTLS=true" dbVersionString="MSSQL_PROP" Port="1433" Username="MyLogin" Password="enc:system.encryption.key.v1:O2KCYDrX31Ue26N1enuzkMhKOugQguY+3aMJcZvgexSsJOwz8A==" ServerName="DESKTOP-7JLKFQ7" DatasourceName="" FileFieldName="" SID="miles" SqlSynthax="" StringQuote="" NullChar="" DbmsId="id_MSSQL" ProductId="SQL_SERVER" AdditionalParams="com.ibm.jsse2.overrideDefaultTLS=true" StandardSQL="true" SQLMode="false" UiSchema="dbo">
     <taggedValue xmi:id="_qCSM4VD1EeyOoOtcikWAHw" tag="Is Conn Need Reload" value="true"/>
     <taggedValue xmi:id="_qCzxUFD1EeyOoOtcikWAHw" tag="package filter" value=""/>
     <taggedValue xmi:id="_qDBMsFD1EeyOoOtcikWAHw" tag="Status" value=""/>
@@ -15,7 +15,7 @@
     <parameters xmi:id="_2GzMAFETEeyQD9nyT92ffw" key="CONN_PARA_KEY_USERNAME" value="MyLogin"/>
     <parameters xmi:id="_YI7YIFEVEeyQD9nyT92ffw" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
   </TalendMetadata:DatabaseConnection>
-  <orgomg.cwm.resource.relational:Catalog xmi:id="_5rqpMFjPEeyLVPvyaIAvqw" name="miles" dataManager="_O7O1sFi5EeynwYsAcnhgZQ">
-    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_5rqpMVjPEeyLVPvyaIAvqw" name="dbo"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_zZJGoHK3Eey7I8XvnkQWXg" name="miles" dataManager="_O7O1sFi5EeynwYsAcnhgZQ">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_zZJGoXK3Eey7I8XvnkQWXg" name="dbo"/>
   </orgomg.cwm.resource.relational:Catalog>
 </xmi:XMI>

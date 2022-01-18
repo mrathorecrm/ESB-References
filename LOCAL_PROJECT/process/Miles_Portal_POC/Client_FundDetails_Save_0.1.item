@@ -44,7 +44,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:k3Og0Zi1VZ84q8UF5ZVsgfD8+ecrHAFQ66rgwGmc" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:A4bPTTNj1TFBmSFQ10MmII5g3g2UbhdoXUhHtqfU" show="false"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
@@ -79,7 +79,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:5RNQRIFsWPF6U4lLNg3JHu+T1RhwMAG/MicWxh03" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:bzNQvTI68e1sCychT6qk9CJ+CGP9iEdbO6ZOsoEu" show="false"/>
     <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
@@ -182,17 +182,21 @@
               <children xsi:type="TalendXMLMap:OutputTreeNode" name="SchemeCode" expression="[request.body:/root/RequestBody/SchemeCode]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.4" xpath="mapped_request.body:/root/RequestBody/SchemeCode"/>
               <children xsi:type="TalendXMLMap:OutputTreeNode" name="SchemeType" expression="[request.body:/root/RequestBody/SchemeType]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.5" xpath="mapped_request.body:/root/RequestBody/SchemeType"/>
             </children>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="dataEnc" expression="Var.dataEnc" incomingConnections="//@node.1/@nodeData/@connections.6" xpath="mapped_request.body:/root/dataEnc"/>
           </children>
         </nodes>
         <nodes name="useruniquecode" expression="[request.body:/root/UserUniqueCode]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.2" xpath="mapped_request/useruniquecode" pattern=""/>
       </outputTrees>
-      <varTables name="Var" minimized="true"/>
+      <varTables name="Var">
+        <nodes name="dataEnc" expression="&quot;m44Ms87tLFPne4sY2E8zjdw0ipeU2Wek6VEJtHD0DxVdHq6UtgrVB+Ds85Y3is5WpoHoXHgh5r+DMt3NIimPJkwSxvOsrzI1XBVdZoT/s2QZMDLIIJW5/puldNeSCVtB7x2FJmbcShoMd5/rSujalbFbYeVANmu58HYoYtQA6YmUPS6RMsEM2fu977hxiXYJhkbxZzqXv9CvspapisDTEgtGkBfGg5gLSTmn1Vp1ETvRhyB+Viopfq7JWB2UNJgalsuJUfDSnwYGFX7DbfVPuGCBaf0OCMIyxZ8MvWSv4zge/oRxGiRaVzg0Kx8l3Ua1&quot; " type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.6"/>
+      </varTables>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0"/>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1"/>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.2" target="//@node.1/@nodeData/@outputTrees.0/@nodes.1"/>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.3/@children.0" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.0"/>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.3/@children.1" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.1"/>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.3/@children.2" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.2"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@varTables.0/@nodes.0" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.3"/>
     </nodeData>
   </node>
   <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="-2752" posY="160">
@@ -220,7 +224,7 @@
     <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" value="BASIC" show="false"/>
     <elementParameter field="TEXT" name="AUTH_USERNAME" value="&quot;username&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="enc:system.encryption.key.v1:BJh1qC3l1ps7FQKM4mHvEi4LIllXNVJHpctBPf07+VJvT0TbObY=" show="false"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="enc:system.encryption.key.v1:GIV+3D2DNcezPLYtGW9UGQBbRpnjWNKRZB2R2ZJDugSt17jY/to=" show="false"/>
     <elementParameter field="TEXT" name="AUTH_BEARER_TOKEN" value="&quot;&quot;" show="false"/>
     <elementParameter field="CHECK" name="NEED_AUTHORIZATION" value="false" show="false"/>
     <elementParameter field="TEXT" name="ROLE" value="&quot;&quot;" show="false"/>
@@ -251,7 +255,7 @@
     <elementParameter field="TEXT" name="PROXY_HOST" value="&quot;61.163.92.4&quot;" show="false"/>
     <elementParameter field="TEXT" name="PROXY_PORT" value="8080" show="false"/>
     <elementParameter field="TEXT" name="PROXY_USERNAME" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" value="enc:system.encryption.key.v1:cncIL+8DVsdenzbNFgWt6JRrpp0ODV2VdvcWUP5z" show="false"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" value="enc:system.encryption.key.v1:U3S9BLYZjss8Tt9a15qJebRw/7rqpwiNaH+FwUtB" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="mapped_request" name="tRESTClient_1">
       <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
@@ -695,6 +699,7 @@
     </metadata>
     <metadata connector="FLOW" label="stockallocationresponse" name="stockallocationresponse">
       <column comment="" key="true" length="-1" name="id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="date_entered" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="date_modified" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="modified_user_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -708,6 +713,7 @@
     </metadata>
     <metadata connector="FLOW" label="sectorallocationresponse" name="sectorallocationresponse">
       <column comment="" key="true" length="-1" name="id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="date_entered" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="date_modified" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="modified_user_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -774,14 +780,14 @@
             <children name="NAVDate" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.33" xpath="fund_details.body:/funds/NAVDate"/>
             <children name="StockAllocationResponseCollection" expression="" type="id_String" xpath="fund_details.body:/funds/StockAllocationResponseCollection" loop="true" main="true">
               <children name="StockAllocationResponseCollectionID" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.82 //@node.7/@nodeData/@connections.95" xpath="fund_details.body:/funds/StockAllocationResponseCollection/StockAllocationResponseCollectionID"/>
-              <children name="Company" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.78" xpath="fund_details.body:/funds/StockAllocationResponseCollection/Company"/>
+              <children name="Company" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.78 //@node.7/@nodeData/@connections.99" xpath="fund_details.body:/funds/StockAllocationResponseCollection/Company"/>
               <children name="CompPercAllocation" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.79" xpath="fund_details.body:/funds/StockAllocationResponseCollection/CompPercAllocation"/>
               <children name="Type" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.80" xpath="fund_details.body:/funds/StockAllocationResponseCollection/Type"/>
               <children name="SchemeCode" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.81" xpath="fund_details.body:/funds/StockAllocationResponseCollection/SchemeCode"/>
             </children>
             <children name="SectorAllocationResponseCollection" expression="" type="id_String" xpath="fund_details.body:/funds/SectorAllocationResponseCollection" loop="true" main="true">
               <children name="SectorAllocationResponseCollectionId" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.90 //@node.7/@nodeData/@connections.98" xpath="fund_details.body:/funds/SectorAllocationResponseCollection/SectorAllocationResponseCollectionId"/>
-              <children name="Industry" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.85" xpath="fund_details.body:/funds/SectorAllocationResponseCollection/Industry"/>
+              <children name="Industry" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.85 //@node.7/@nodeData/@connections.100" xpath="fund_details.body:/funds/SectorAllocationResponseCollection/Industry"/>
               <children name="IndPercAllocation" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.86" xpath="fund_details.body:/funds/SectorAllocationResponseCollection/IndPercAllocation"/>
               <children name="Type" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.87" xpath="fund_details.body:/funds/SectorAllocationResponseCollection/Type"/>
               <children name="PortfolioDate" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.88" xpath="fund_details.body:/funds/SectorAllocationResponseCollection/PortfolioDate"/>
@@ -918,6 +924,7 @@
       </outputTrees>
       <outputTrees minimized="true" name="stockallocationresponse">
         <nodes name="id" expression="[fund_details.body:/funds/StockAllocationResponseCollection/StockAllocationResponseCollectionID]" type="id_String" incomingConnections="//@node.7/@nodeData/@connections.82" xpath="stockallocationresponse/id" pattern="" key="true"/>
+        <nodes name="name" expression="[fund_details.body:/funds/StockAllocationResponseCollection/Company]" type="id_String" incomingConnections="//@node.7/@nodeData/@connections.99" xpath="stockallocationresponse/name" pattern=""/>
         <nodes name="date_entered" expression="Var.currentDate" type="id_Date" incomingConnections="//@node.7/@nodeData/@connections.83" xpath="stockallocationresponse/date_entered" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;"/>
         <nodes name="date_modified" expression="Var.currentDate" type="id_Date" incomingConnections="//@node.7/@nodeData/@connections.84" xpath="stockallocationresponse/date_modified" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;"/>
         <nodes name="modified_user_id" expression="context.useruniquecode" type="id_String" xpath="stockallocationresponse/modified_user_id" pattern=""/>
@@ -930,8 +937,9 @@
         <nodes name="schemecode" expression="[fund_details.body:/funds/StockAllocationResponseCollection/SchemeCode]" type="id_String" incomingConnections="//@node.7/@nodeData/@connections.81" xpath="stockallocationresponse/schemecode"/>
         <inputLoopNodesTables inputloopnodes="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.36"/>
       </outputTrees>
-      <outputTrees minimized="true" name="sectorallocationresponse">
+      <outputTrees name="sectorallocationresponse">
         <nodes name="id" expression="[fund_details.body:/funds/SectorAllocationResponseCollection/SectorAllocationResponseCollectionId]" type="id_String" incomingConnections="//@node.7/@nodeData/@connections.90" xpath="sectorallocationresponse/id" pattern="" key="true"/>
+        <nodes name="name" expression="[fund_details.body:/funds/SectorAllocationResponseCollection/Industry]" type="id_String" incomingConnections="//@node.7/@nodeData/@connections.100" xpath="sectorallocationresponse/name" pattern=""/>
         <nodes name="date_entered" expression="Var.currentDate" type="id_Date" incomingConnections="//@node.7/@nodeData/@connections.91" xpath="sectorallocationresponse/date_entered" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;"/>
         <nodes name="date_modified" expression="Var.currentDate" type="id_Date" incomingConnections="//@node.7/@nodeData/@connections.92" xpath="sectorallocationresponse/date_modified" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;"/>
         <nodes name="modified_user_id" expression="context.useruniquecode" type="id_String" xpath="sectorallocationresponse/modified_user_id" pattern=""/>
@@ -1040,27 +1048,29 @@
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@varTables.0/@nodes.0" target="//@node.7/@nodeData/@outputTrees.0/@nodes.1"/>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@varTables.0/@nodes.0" target="//@node.7/@nodeData/@outputTrees.0/@nodes.2"/>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0" target="//@node.7/@nodeData/@outputTrees.0/@nodes.0"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.36/@children.1" target="//@node.7/@nodeData/@outputTrees.1/@nodes.7"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.36/@children.2" target="//@node.7/@nodeData/@outputTrees.1/@nodes.8"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.36/@children.3" target="//@node.7/@nodeData/@outputTrees.1/@nodes.9"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.36/@children.4" target="//@node.7/@nodeData/@outputTrees.1/@nodes.10"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.36/@children.1" target="//@node.7/@nodeData/@outputTrees.1/@nodes.8"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.36/@children.2" target="//@node.7/@nodeData/@outputTrees.1/@nodes.9"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.36/@children.3" target="//@node.7/@nodeData/@outputTrees.1/@nodes.10"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.36/@children.4" target="//@node.7/@nodeData/@outputTrees.1/@nodes.11"/>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.36/@children.0" target="//@node.7/@nodeData/@outputTrees.1/@nodes.0"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@varTables.0/@nodes.0" target="//@node.7/@nodeData/@outputTrees.1/@nodes.1"/>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@varTables.0/@nodes.0" target="//@node.7/@nodeData/@outputTrees.1/@nodes.2"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.37/@children.1" target="//@node.7/@nodeData/@outputTrees.2/@nodes.7"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.37/@children.2" target="//@node.7/@nodeData/@outputTrees.2/@nodes.8"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.37/@children.3" target="//@node.7/@nodeData/@outputTrees.2/@nodes.9"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.37/@children.4" target="//@node.7/@nodeData/@outputTrees.2/@nodes.10"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.37/@children.5" target="//@node.7/@nodeData/@outputTrees.2/@nodes.11"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@varTables.0/@nodes.0" target="//@node.7/@nodeData/@outputTrees.1/@nodes.3"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.37/@children.1" target="//@node.7/@nodeData/@outputTrees.2/@nodes.8"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.37/@children.2" target="//@node.7/@nodeData/@outputTrees.2/@nodes.9"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.37/@children.3" target="//@node.7/@nodeData/@outputTrees.2/@nodes.10"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.37/@children.4" target="//@node.7/@nodeData/@outputTrees.2/@nodes.11"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.37/@children.5" target="//@node.7/@nodeData/@outputTrees.2/@nodes.12"/>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.37/@children.0" target="//@node.7/@nodeData/@outputTrees.2/@nodes.0"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@varTables.0/@nodes.0" target="//@node.7/@nodeData/@outputTrees.2/@nodes.1"/>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@varTables.0/@nodes.0" target="//@node.7/@nodeData/@outputTrees.2/@nodes.2"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@varTables.0/@nodes.0" target="//@node.7/@nodeData/@outputTrees.2/@nodes.3"/>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@varTables.0/@nodes.0" target="//@node.7/@nodeData/@outputTrees.3/@nodes.1"/>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0" target="//@node.7/@nodeData/@outputTrees.3/@nodes.2"/>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.36/@children.0" target="//@node.7/@nodeData/@outputTrees.3/@nodes.3"/>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@varTables.0/@nodes.0" target="//@node.7/@nodeData/@outputTrees.4/@nodes.1"/>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0" target="//@node.7/@nodeData/@outputTrees.4/@nodes.2"/>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.37/@children.0" target="//@node.7/@nodeData/@outputTrees.4/@nodes.3"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.36/@children.1" target="//@node.7/@nodeData/@outputTrees.1/@nodes.1"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.37/@children.1" target="//@node.7/@nodeData/@outputTrees.2/@nodes.1"/>
     </nodeData>
   </node>
   <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-1760" posY="64">
@@ -1074,7 +1084,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:YAi/KYwjRUmVjBgPia7CfcWIXUZHdH7Q/0LArcBu" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:KU9xFe88lxYgPax/H/kJmvCcKjoQXmg8kJnDGWwh" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;fd_funddetails&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -1697,7 +1707,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:brEpeOsomSHQTVgx+R7Ba/fklAbDjuBSxQ5iMwjp" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:frpkYMQCTp2nNyPQBPjF3o882p366Asxy6YOfpcP" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;fd_stockallocationresponse&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -1722,6 +1732,11 @@
     <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
     <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
       <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="name"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
@@ -1785,6 +1800,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="stockallocationresponse" name="tDBOutput_2">
       <column comment="" key="true" length="-1" name="id" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="name" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="date_entered" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="date_modified" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="modified_user_id" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -1798,6 +1814,7 @@
     </metadata>
     <metadata connector="REJECT" label="stockallocationresponse" name="REJECT">
       <column comment="" key="true" length="-1" name="id" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="name" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="date_entered" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="date_modified" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="modified_user_id" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -1823,7 +1840,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:lmKxcR0vZzXNb0fbJRetraZkb8QPp0LUzY3yOP0t" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:9y2MqrmhzA70dmwYkDFPuJ63nForI3q9DiioA0+f" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;fd_sectorallocationresponse&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -1848,6 +1865,11 @@
     <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
     <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
       <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="name"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
@@ -1916,6 +1938,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="sectorallocationresponse" name="tDBOutput_3">
       <column comment="" key="true" length="-1" name="id" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="name" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="date_entered" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="date_modified" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="modified_user_id" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -1930,6 +1953,7 @@
     </metadata>
     <metadata connector="REJECT" label="sectorallocationresponse" name="REJECT">
       <column comment="" key="true" length="-1" name="id" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="name" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="date_entered" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="date_modified" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="modified_user_id" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -1956,7 +1980,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:0w6I/xPVpYnCkr3BoXh0kN/vEZmMqm7zQaeZny6v" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:NPnOiqRrXznCpLtQQ9BBnWRPdjCFb4iCeQMwHnGa" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;fd_funddetails_fd_stockallocationresponse_c&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -2033,7 +2057,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:TGctxcIUGWFLVbWQ8bYFmutH4EH9vWFs3/rnqTb1" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ZOBWRw/ppnrk3sPXpZrsQxwZoY+fAS/pvTDiK/wp" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;fd_funddetails_fd_sectorallocationresponse_c&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -2382,6 +2406,8 @@
     <elementParameter field="TABLE" name="LENGTHS" show="false">
       <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
       <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="name"/>
+      <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="date_entered"/>
       <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="date_modified"/>
@@ -2408,6 +2434,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="stockallocationresponse" name="tLogRow_2">
       <column comment="" key="true" length="-1" name="id" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="name" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="date_entered" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="date_modified" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="modified_user_id" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -2435,6 +2462,8 @@
     <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
     <elementParameter field="TABLE" name="LENGTHS" show="false">
       <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="name"/>
       <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="date_entered"/>
       <elementValue elementRef="LENGTH" value="10"/>
@@ -2464,6 +2493,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="sectorallocationresponse" name="tLogRow_3">
       <column comment="" key="true" length="-1" name="id" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="name" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="date_entered" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="date_modified" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="modified_user_id" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -2567,7 +2597,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;miles&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;MyLogin&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:oNIQMyRLGzR6qDjRzj4/WTRZBCeQ+l5uUB+mDnljlMuY"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:qKPg9lCuY0pQ7+qStadNIqflh5jb+LjpGsqAdDezYesiXSB0a46S"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;com.ibm.jsse2.overrideDefaultTLS=true&quot;"/>

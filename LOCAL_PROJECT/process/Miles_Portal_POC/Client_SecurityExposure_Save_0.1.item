@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendXMLMap="http://www.talend.org/xmlmap" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
-  <context confirmationNeeded="false" name="Default">
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendXMLMap="http://www.talend.org/xmlmap" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Local" jobType="Standard">
+  <context confirmationNeeded="false" name="Local">
+    <contextParameter comment="" name="useruniquecode" prompt="useruniquecode?" promptNeeded="false" repositoryContextId="_3JoVcGSwEeyXd7Kerrt_4g" type="id_String" value=""/>
+  </context>
+  <context confirmationNeeded="false" name="Staging">
     <contextParameter comment="" name="useruniquecode" prompt="useruniquecode?" promptNeeded="false" repositoryContextId="_3JoVcGSwEeyXd7Kerrt_4g" type="id_String" value=""/>
   </context>
   <parameters>
@@ -44,7 +47,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:oJBI1jiFc8fQf0XPNpHKXFNNgE2qrLp2P1XmNOMx" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:WGwIbOlauJ+uEcpYEF8juEhEaqD7NTuh7ZANDS/F" show="false"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
@@ -79,7 +82,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Om+uvUVEgeskZQDTZO7MYA7892O02pqJPv/2f0oi" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:agI3HT4Ufrq4ciPsE06BsZjS4Bvg9opeKVnTFq+b" show="false"/>
     <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
@@ -187,7 +190,7 @@
         </nodes>
         <nodes name="string" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.18" xpath="request/string"/>
       </inputTrees>
-      <outputTrees name="mapped_request" allInOne="true">
+      <outputTrees activateCondensedTool="true" name="mapped_request" allInOne="true">
         <nodes name="body" expression="" type="id_Document" xpath="mapped_request/body" pattern="">
           <children xsi:type="TalendXMLMap:OutputTreeNode" name="root" expression="" type="id_String" xpath="mapped_request.body:/root" main="true">
             <children xsi:type="TalendXMLMap:OutputTreeNode" name="UniqueIdentifier" expression="[request.body:/root/UniqueIdentifier]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.0" xpath="mapped_request.body:/root/UniqueIdentifier"/>
@@ -209,15 +212,12 @@
               <children xsi:type="TalendXMLMap:OutputTreeNode" name="ClientType" expression="[request.body:/root/RequestBody/ClientType]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.15" xpath="mapped_request.body:/root/RequestBody/ClientType"/>
               <children xsi:type="TalendXMLMap:OutputTreeNode" name="ForCorporateAction" expression="[request.body:/root/RequestBody/ForCorporateAction]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.16" xpath="mapped_request.body:/root/RequestBody/ForCorporateAction"/>
             </children>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="dataEnc" expression="Var.dataEnc" incomingConnections="//@node.1/@nodeData/@connections.19" xpath="mapped_request.body:/root/dataEnc"/>
           </children>
         </nodes>
         <nodes name="useruniquecode" expression="[request.body:/root/UserUniqueCode]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.17" xpath="mapped_request/useruniquecode" pattern=""/>
         <nodes name="string" expression="request.string" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.18" xpath="mapped_request/string" pattern=""/>
       </outputTrees>
-      <varTables name="Var">
-        <nodes name="dataEnc" expression="&quot;m44Ms87tLFPne4sY2E8zjdw0ipeU2Wek6VEJtHD0DxVdHq6UtgrVB+Ds85Y3is5WpoHoXHgh5r+DMt3NIimPJkwSxvOsrzI1XBVdZoT/s2QZMDLIIJW5/puldNeSCVtB7x2FJmbcShoMd5/rSujalbFbYeVANmu58HYoYtQA6YmUPS6RMsEM2fu977hxiXYJsdAkMc9jZF0m8vqAUYrExGjaUgKwqDCz5YmOIRVppDzfHSCu7iigSB3S3ko7hIjrsuEO0LeZDwqJG9wSZE6HMxqYKTb9Fh+3GY7SACUTEgzvIivB+LMc2BT5TWA1sydv0+aJ2GmbkjfWMJzXOsRH3ZqNLbI0ofgXgHtN8ipvKvT5VEGRSWs8Iieq/eJB78VhOnVplrO7wo9gW2vyso+EC1I29mPYIy389eNKzJCT6uHh/GVCa9pQDNAiZ4HKHUTTXfsBNQgONxPo7VEMdylft/Yu6t9vzoTEG1Q9wsZjPjaiUAifYSZndbCIj5+xf2tgBvQFkvNBvmFJI0L2Hf32XDhBOHMGFsd1vYDSkz8M4UnkrSFF2R7mn2CdPSk55Vn1WXkq1eYQj6WbXbdHy+JDasydauSh9rKW+Ra1asHV109HWjrG9dJd1OLmtVa9lq+el1MvPzg18fgOX6kEDYAslm+MuoRcCZpnpVjgFnXs9f4x+Eon4cGpFxwEDeVWsCBrVbbA7UG2qyM4jWLSJ9LoRKoFBOV60iiZjmUTRzufUSg=&quot; " type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.19"/>
-      </varTables>
+      <varTables name="Var" minimized="true"/>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0"/>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1"/>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.3/@children.0" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.0"/>
@@ -237,7 +237,6 @@
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.3/@children.14" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2/@children.14"/>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.2" target="//@node.1/@nodeData/@outputTrees.0/@nodes.1"/>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.1" target="//@node.1/@nodeData/@outputTrees.0/@nodes.2"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@varTables.0/@nodes.0" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.3"/>
     </nodeData>
   </node>
   <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="-2752" posY="96">
@@ -266,7 +265,7 @@
     <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" value="BASIC" show="false"/>
     <elementParameter field="TEXT" name="AUTH_USERNAME" value="&quot;username&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="enc:system.encryption.key.v1:j7iMxbAe6Nisx72qgbiu6RCVe6OOLpMPKA+ufFqvTfb7/v7L9pg=" show="false"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="enc:system.encryption.key.v1:AyucBFtf1FSNCnF5Bv0dtcX1eMMxQOsgQemziiGfQIdbnDxr6MI=" show="false"/>
     <elementParameter field="TEXT" name="AUTH_BEARER_TOKEN" value="&quot;&quot;" show="false"/>
     <elementParameter field="CHECK" name="NEED_AUTHORIZATION" value="false" show="false"/>
     <elementParameter field="TEXT" name="ROLE" value="&quot;&quot;" show="false"/>
@@ -297,7 +296,7 @@
     <elementParameter field="TEXT" name="PROXY_HOST" value="&quot;61.163.92.4&quot;" show="false"/>
     <elementParameter field="TEXT" name="PROXY_PORT" value="8080" show="false"/>
     <elementParameter field="TEXT" name="PROXY_USERNAME" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" value="enc:system.encryption.key.v1:58coFc4xi8tqCauT1MMMVRa8+vcmaIsDA62mHphu" show="false"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" value="enc:system.encryption.key.v1:UxJLk8HNFVZhxpg97HSFDT7NdkS2momf4KQde4wS" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="client_holdings" name="tRESTClient_1">
       <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
@@ -526,7 +525,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:whNJ+IJva00iuI3aEMpUvTgnOX9NUKLHqYWm0b30" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:kwlyi2ImtzB24DkDds4LwHWsR3e20Zqhr8WbH1uB" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;ct_clienttransactions&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -847,7 +846,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;miles&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;MyLogin&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:X7U8lBJnuPQmeatxhmSuFOxP7CFv/Wf7keahBaiox+9AP80WjDxk"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:BqrgsdrO95xOrnw9wSB7GGsN8QbTfyd9bUD1mNsB4Jrkh/TjbN2Z"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;com.ibm.jsse2.overrideDefaultTLS=true&quot;"/>

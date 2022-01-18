@@ -39,14 +39,15 @@ public class PostData {
      * 
      * {example} helloExemple("world") # hello world !.
      */
-    public static String PostData(String tpa, String headerhost, String URLs) {
+    public static String PostData(String tpa, String headerhost, String URLs, String req) {
     	String s="";
     	try {
     		OkHttpClient client = new OkHttpClient();
 
 			MediaType mediaType = MediaType.parse("application/json");
 
-			String req = "m44Ms87tLFPne4sY2E8zjdw0ipeU2Wek6VEJtHD0DxVdHq6UtgrVB+Ds85Y3is5WpoHoXHgh5r+DMt3NIimPJif0hH1vMmLfO0XcjFhunD5D8sTQwXoC/dysFv9x6F6OvDEfN9iTsYk8e8uXI1iivBxDja8X9mZTpFTYNH0Gr5ahmRGGfIS4afc52Hg0oHmV53gxGLRZw57dCp4BEbsQOEC6d7uQLB0eiTnQenTWULgU7xiVjFnU/R65iuGTdb5a7oIr1iSUQdAZKLr/MCU5gH/xivkq1blMGOukkNR+lWYKhND+iudktdEMXF91y1qELYf1WqoC1K7vIu/Pvh9B4ar3GUEc2DtFf1+94xEQ3gaCHXHm+u4QW3zhGgBHaB9yDdzlAMexQQX1HrdzPpg/OSLWQxrMrfRQOKc5dbRunlO7VyDFEHNTxmDzFb7GPPDsn7mXFUmNsGrh+iT2VeVwP3dxvwD+fXg+zaaVqZaAk6pPRqLNHoz2IgXf9lQDW95I0dH2JwBdxaduZqUBB4mENyUZAmXF3FNBkFLtcSyiFkzmMJH5TYmvUGZgkwrldmjDFCemY/8sRZs3Rj0W50Iu/Pd5wY606I1LtqTbFuFWKBvek88LwyF5d+SqjpFjwE/QXDO/S22ruB4s2i4F0jGaiECLYi0n3Zv23iiE94GG51w=";
+			//req = "m44Ms87tLFPne4sY2E8zjdw0ipeU2Wek6VEJtHD0DxVdHq6UtgrVB+Ds85Y3is5WpoHoXHgh5r+DMt3NIimPJif0hH1vMmLfO0XcjFhunD5D8sTQwXoC/dysFv9x6F6OW5162k4DiIxkjPePI4VWPvOq7SLGf9qHte7+FeUjWNep5PViN7C3Fg78r8CfZkoZm3DtSxNmXEmYCZ08OZXUEs/zvhar4dG2i2GxkLPUiD1fEq7JrpiCT9z8Fnk7fzyvGsnvSh5LYStkF85cCarigS5B/a60HZkzH2TVl23nDah44MILYZHfK7hf6lu0Dkayy623dnA9HTe8ovouBxNQ4pAjs6k+PA9vNNKDJ7E2Wed3XoADZdS9EW3NB8o2clmpZzTSAbMwLDzvv/+9obT/3qtSIofWif5QXfKD913oRneJhUKALCxJjejos+mcCXPnQ1T8P3NufcmqhgRelCBtMZ58jZVMZAutea1wo37JRMUOtA6Pl6FHu1a2WItGFS1qgGLEmKWag1Tk3KF9hts9L0tAnQ8czNxPlTNUk5gvwQ0PARPAZDSFR9a5kgxaA7XtbR8wAx35bX5pKjUpM7E+GYAEQ+A3RwJAyw9kvEiJAh54OqbWlXWyoX4VGYInx0wg";
+			//System.out.println(req);
 
 			RequestBody body = RequestBody.create(mediaType, req);
 			Request request = new Request.Builder()
